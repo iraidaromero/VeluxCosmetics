@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Velux Cosmetics | Cosmética Natural y Vegana</title>
+  <title>Sérum Vitamina C | Velux Cosmetics</title>
+  <!-- Fuentes y estilos -->
   <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/producto.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -67,113 +68,97 @@
 
   <div class="fondo-oscuro" id="fondo-oscuro"></div>
 
-  <main>
-    <!-- Banner principal -->
-    <section class="seccion-banner">
-      <div class="banner-ancho">
-        <img src="img/banner/banner1.png" alt="Ambiente natural Velux">
-      </div>
-    </section>
+  <main class="detalle-producto">
     
-    <!-- Productos -->
-    <section class="seccion-productos">
-      <div class="rejilla-productos">
-        <a href="producto.html" class="tarjeta-producto">
-          <img src="img/productos/facial/SerumVitaminaC.png" alt="Sérum vitamina C">
-          <h4>Sérum Vitamina C</h4>
+    <section class="producto-principal">
+
+      <div class="imagen-producto">
+        <img src="img/productos/facial/SerumVitaminaC.png" alt="Sérum Vitamina C">
+      </div>
+
+      <div class="info-producto">
+        <h2>Sérum Vitamina C</h2>
+        <p class="subtitulo">Sérum concentrado de vitamina C 30 ml</p>
+
+        <p class="precio">35,95 €</p>
+
+        <div class="valoracion">
+          ★★★★☆ <span>(4/5)</span>
+          <a href="#">ver 1187 opiniones</a>
+        </div>
+
+        <div class="cantidad">
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </div>
+
+        <button class="boton-principal">LO QUIERO</button>
+
+        <div class="descripcion">
+          <p><strong>Fórmula 99,9% natural | Antioxidante | Apto piel sensible</strong></p>
+          <p>
+            ¿Buscas antioxidantes para tu piel que ayuden a prevenir las primeras líneas de expresión?
+            Descubre este sérum de vitamina C hasta 20 veces más eficaz gracias a su tecnología natural
+            de encapsulamiento.
+          </p>
+          <h4>Beneficios</h4>
+          <ul>
+            <li>Su poder antioxidante es 1.000 veces superior al de la Coenzima Q10</li>
+            <li>Aporta un 15% más de luminosidad a la piel</li>
+            <li>Reduce en un 64% la rugosidad de la piel</li>
+            <li>Previene y reduce arrugas en 28% en 42 días</li>
+            <li>Mejora la síntesis de colágeno a largo plazo</li>
+            <li>Multiplica su eficacia gracias a una tecnología natural de encapsulamiento</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="linea-verde"></div>
+
+    <!-- Productos relacionados -->
+    <section class="relacionados">
+      <h3>Relacionados</h3>
+
+      <div class="rejilla-relacionados">
+
+        <div class="tarjeta-producto">
+          <img src="img/productos/facial/HidratantePieles.png" alt="">
+          <h4>Hidratante pieles grasas y mixtas</h4>
+          <div class="valoracion">★★★★☆</div>
+          <p class="precio">29,95 €</p>
+          <button class="boton">AÑADIR AL CARRITO</button>
+        </div>
+
+        <div class="tarjeta-producto">
+          <img src="img/productos/facial/Balsamo.png" alt="">
+          <h4>Bálsamo labial 100% natural</h4>
+          <div class="valoracion">★★★★☆</div>
+          <p class="precio">7,95 €</p>
+          <button class="boton">AÑADIR AL CARRITO</button>
+        </div>
+
+        <div class="tarjeta-producto">
+          <img src="img/productos/facial/SerumPestañas.png" alt="">
+          <h4>Sérum para las pestañas</h4>
           <div class="valoracion">★★★★☆</div>
           <p class="precio">35,95 €</p>
           <button class="boton">AÑADIR AL CARRITO</button>
-        </a>
-
+        </div>
 
         <div class="tarjeta-producto">
-          <img src="img/productos/corporal/CremaCorporal.png" alt="Crema hidratante corporal">
+          <img src="img/productos/corporal/CremaCorporal.png" alt="">
           <h4>Crema Hidratante corporal</h4>
           <div class="valoracion">★★★★☆</div>
           <p class="precio">22,95 €</p>
           <button class="boton">AÑADIR AL CARRITO</button>
         </div>
 
-        <div class="tarjeta-producto">
-          <img src="img/productos/capilar/ProtectorTermico.png" alt="Protector térmico pelo">
-          <h4>Protector térmico pelo</h4>
-          <div class="valoracion">★★★★☆</div>
-          <p class="precio">19,95 €</p>
-          <button class="boton">AÑADIR AL CARRITO</button>
-        </div>
-
-        <div class="tarjeta-producto">
-          <img src="img/productos/capilar/ChampuAnticaida.png" alt="Champú anticaída">
-          <h4>Champú anticaída</h4>
-          <div class="valoracion">★★★★☆</div>
-          <p class="precio">19,95 €</p>
-          <button class="boton">AÑADIR AL CARRITO</button>
-        </div>
       </div>
     </section>
 
-    <!-- Banner galería -->
-    <section class="seccion-galeria">
-      <div class="galeria-productos">
-        <button class="flecha izquierda">❮</button>
-        <img src="img/banner/banner2.png" alt="Banner producto natural">
-        <button class="flecha derecha">❯</button>
-      </div>
-    </section>
-    
-    <!-- Tarjetas beneficios -->
-    <section class="seccion-beneficios">
-      <div class="rejilla-beneficios">
-
-        <div class="tarjeta-beneficio beige">
-          <h3>Restringimos más de mil ingredientes</h3>
-          <p>
-            Cosmética natural sin efectos adversos. Solo incluimos los nutrientes que aportan un valor real a la salud de la piel y el pelo.
-          </p>
-          <p class="tachado">
-            Aluminio, Flúor, Siliconas, Plomo, Oxibenzona, Parabenos
-          </p>
-        </div>
-
-        <div class="tarjeta-beneficio fondo2">
-          <h3>Fórmulas clínicamente testadas</h3>
-          <p>
-            por dermatólogos independientes para solucionar problemas cutáneos sin efectos adversos. Aptas para ti, incluso si tienes la piel sensible.
-          </p>
-        </div>
-
-        <div class="tarjeta-beneficio fondo3">
-          <h3>Ingredientes +99% naturales y biocompatibles</h3>
-          <p>
-            que la piel reconoce al instante e integra con facilidad, sin alterar la barrera cutánea y sin provocar reacción.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Banner mensaje -->
-    <section class="seccion-mensaje">
-      <div class="mensaje-intro">
-        <h1>La alternativa 100% vegana con envases de vidrio y cartón</h1>
-        <p>
-          La industria cosmética todavía emplea ingredientes de origen animal y desecha billones de envases de plástico cada año,
-          <strong>pero existe una alternativa.</strong>
-        </p>
-      </div>
-    </section>
-
-    <!-- Banner info -->
-    <section class="seccion-garantias">
-      <div class="lista-garantias">
-        <div class="garantia"><img src="img/info/transporte.png" alt=""><span>Envíos en 24/48 horas</span></div>
-        <div class="garantia"><img src="img/info/gift.png" alt=""><span>Regalo seguro con tu pedido</span></div>
-        <div class="garantia"><img src="img/info/pay.png" alt=""><span>Pagos 100% seguros</span></div>
-        <div class="garantia"><img src="img/info/returned.png" alt=""><span>Devoluciones gratuitas</span></div>
-        <div class="garantia"><img src="img/info/customer.png" alt=""><span>Atención al Cliente</span></div>
-      </div>
-    </section>
   </main>
 
   <!-- Footer -->
@@ -223,7 +208,6 @@
   </footer>
 
   <script src="./js/menu.js"></script>
-
 
 </body>
 </html>

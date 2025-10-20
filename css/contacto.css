@@ -1,0 +1,97 @@
+.contacto {
+  padding: 80px 100px;
+  font-family: "Roboto", sans-serif;
+  color: #111;
+}
+
+.contacto h2 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.contacto .intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px;
+  color: #111;
+  line-height: 1.6;
+}
+
+.contenedor-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+/* Formulario*/
+.formulario {
+  flex: 1;
+  max-width: 500px;
+}
+
+.formulario h3 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  color: #111;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.formulario textarea {
+  resize: none;
+}
+
+.formulario button {
+  background-color: #DDF1D2;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formulario button:hover {
+  background-color: #c3e6b8;
+}
+
+.info-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-top: 55px;
+}
+
+.dato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  font-size: 15px;
+  color: #111;
+}
+
+.dato img {
+  width: 38px;
+  opacity: 0.8;
+}
+

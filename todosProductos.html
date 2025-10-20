@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Velux Cosmetics | Cosmética Natural y Vegana</title>
+  <title>Productos | Velux Cosmetics</title>
   <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/todosProductos.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -67,17 +67,12 @@
 
   <div class="fondo-oscuro" id="fondo-oscuro"></div>
 
-  <main>
-    <!-- Banner principal -->
-    <section class="seccion-banner">
-      <div class="banner-ancho">
-        <img src="img/banner/banner1.png" alt="Ambiente natural Velux">
-      </div>
-    </section>
-    
-    <!-- Productos -->
+  <main class="productos">
     <section class="seccion-productos">
+      <h2>Nuestros Productos</h2>
+
       <div class="rejilla-productos">
+        <!-- Fila 1 -->
         <a href="producto.html" class="tarjeta-producto">
           <img src="img/productos/facial/SerumVitaminaC.png" alt="Sérum vitamina C">
           <h4>Sérum Vitamina C</h4>
@@ -86,20 +81,77 @@
           <button class="boton">AÑADIR AL CARRITO</button>
         </a>
 
+        <div class="tarjeta-producto">
+          <img src="img/productos/facial/HidratantePieles.png" alt="Hidratante pieles mixtas">
+          <h4>Hidratante pieles grasas y mixtas</h4>
+          <div class="valoracion">★★★★☆</div>
+          <p class="precio">29,95 €</p>
+          <button class="boton">AÑADIR AL CARRITO</button>
+        </div>
+
+        <div class="tarjeta-producto">
+          <img src="img/productos/facial/Balsamo.png" alt="Bálsamo labial 100% natural">
+          <h4>Bálsamo labial 100% natural</h4>
+          <div class="valoracion">★★★★☆</div>
+          <p class="precio">7,95 €</p>
+          <button class="boton">AÑADIR AL CARRITO</button>
+        </div>
+
+        <div class="tarjeta-producto">
+          <img src="img/productos/facial/SerumPestañas.png" alt="Sérum para pestañas">
+          <h4>Sérum para las pestañas</h4>
+          <div class="valoracion">★★★★☆</div>
+          <p class="precio">35,95 €</p>
+          <button class="boton">AÑADIR AL CARRITO</button>
+        </div>
+
+        <!-- Fila 2 -->
+        <div class="tarjeta-producto">
+          <img src="img/productos/corporal/Desodorante.png" alt="Desodorante natural">
+          <h4>Desodorante 99% natural</h4>
+          <div class="valoracion">★★★★☆</div>
+          <p class="precio">14,95 €</p>
+          <button class="boton">AÑADIR AL CARRITO</button>
+        </div>
+
+        <div class="tarjeta-producto">
+          <img src="img/productos/corporal/CremaAnticelulitica.png" alt="Crema anticelulítica">
+          <h4>Crema anticelulítica y reductora</h4>
+          <div class="valoracion">★★★★☆</div>
+          <p class="precio">29,95 €</p>
+          <button class="boton">AÑADIR AL CARRITO</button>
+        </div>
 
         <div class="tarjeta-producto">
           <img src="img/productos/corporal/CremaCorporal.png" alt="Crema hidratante corporal">
-          <h4>Crema Hidratante corporal</h4>
+          <h4>Crema hidratante corporal</h4>
           <div class="valoracion">★★★★☆</div>
           <p class="precio">22,95 €</p>
           <button class="boton">AÑADIR AL CARRITO</button>
         </div>
 
         <div class="tarjeta-producto">
+          <img src="img/productos/corporal/Gel.png" alt="Gel de ducha natural">
+          <h4>Gel de ducha</h4>
+          <div class="valoracion">★★★★☆</div>
+          <p class="precio">9,95 €</p>
+          <button class="boton">AÑADIR AL CARRITO</button>
+        </div>
+
+        <!-- Fila 3 -->
+        <div class="tarjeta-producto">
           <img src="img/productos/capilar/ProtectorTermico.png" alt="Protector térmico pelo">
           <h4>Protector térmico pelo</h4>
           <div class="valoracion">★★★★☆</div>
           <p class="precio">19,95 €</p>
+          <button class="boton">AÑADIR AL CARRITO</button>
+        </div>
+
+        <div class="tarjeta-producto">
+          <img src="img/productos/capilar/TratamientoCaida.png" alt="Tratamiento anticaída">
+          <h4>Tratamiento para caída del pelo</h4>
+          <div class="valoracion">★★★★☆</div>
+          <p class="precio">29,95 €</p>
           <button class="boton">AÑADIR AL CARRITO</button>
         </div>
 
@@ -110,69 +162,20 @@
           <p class="precio">19,95 €</p>
           <button class="boton">AÑADIR AL CARRITO</button>
         </div>
-      </div>
-    </section>
 
-    <!-- Banner galería -->
-    <section class="seccion-galeria">
-      <div class="galeria-productos">
-        <button class="flecha izquierda">❮</button>
-        <img src="img/banner/banner2.png" alt="Banner producto natural">
-        <button class="flecha derecha">❯</button>
-      </div>
-    </section>
-    
-    <!-- Tarjetas beneficios -->
-    <section class="seccion-beneficios">
-      <div class="rejilla-beneficios">
-
-        <div class="tarjeta-beneficio beige">
-          <h3>Restringimos más de mil ingredientes</h3>
-          <p>
-            Cosmética natural sin efectos adversos. Solo incluimos los nutrientes que aportan un valor real a la salud de la piel y el pelo.
-          </p>
-          <p class="tachado">
-            Aluminio, Flúor, Siliconas, Plomo, Oxibenzona, Parabenos
-          </p>
+        <div class="tarjeta-producto">
+          <img src="img/productos/capilar/Acondicionador.png" alt="Acondicionador pelo graso">
+          <h4>Acondicionador para pelo graso</h4>
+          <div class="valoracion">★★★★☆</div>
+          <p class="precio">19,95 €</p>
+          <button class="boton">AÑADIR AL CARRITO</button>
         </div>
+      </div>  
 
-        <div class="tarjeta-beneficio fondo2">
-          <h3>Fórmulas clínicamente testadas</h3>
-          <p>
-            por dermatólogos independientes para solucionar problemas cutáneos sin efectos adversos. Aptas para ti, incluso si tienes la piel sensible.
-          </p>
-        </div>
-
-        <div class="tarjeta-beneficio fondo3">
-          <h3>Ingredientes +99% naturales y biocompatibles</h3>
-          <p>
-            que la piel reconoce al instante e integra con facilidad, sin alterar la barrera cutánea y sin provocar reacción.
-          </p>
-        </div>
-
+      <div class="contenedor-boton">
+        <button class="boton-mostrar">MOSTRAR MÁS</button>
       </div>
-    </section>
-
-    <!-- Banner mensaje -->
-    <section class="seccion-mensaje">
-      <div class="mensaje-intro">
-        <h1>La alternativa 100% vegana con envases de vidrio y cartón</h1>
-        <p>
-          La industria cosmética todavía emplea ingredientes de origen animal y desecha billones de envases de plástico cada año,
-          <strong>pero existe una alternativa.</strong>
-        </p>
-      </div>
-    </section>
-
-    <!-- Banner info -->
-    <section class="seccion-garantias">
-      <div class="lista-garantias">
-        <div class="garantia"><img src="img/info/transporte.png" alt=""><span>Envíos en 24/48 horas</span></div>
-        <div class="garantia"><img src="img/info/gift.png" alt=""><span>Regalo seguro con tu pedido</span></div>
-        <div class="garantia"><img src="img/info/pay.png" alt=""><span>Pagos 100% seguros</span></div>
-        <div class="garantia"><img src="img/info/returned.png" alt=""><span>Devoluciones gratuitas</span></div>
-        <div class="garantia"><img src="img/info/customer.png" alt=""><span>Atención al Cliente</span></div>
-      </div>
+      
     </section>
   </main>
 
@@ -223,7 +226,6 @@
   </footer>
 
   <script src="./js/menu.js"></script>
-
 
 </body>
 </html>
