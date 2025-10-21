@@ -180,6 +180,53 @@ footer {
   height: 22px;
 }
 
+.footer-copy {
+  text-align: center;
+  flex: 1;
+}
+
+.footer-copy p {
+  margin: 3px 0;
+}
+
+.footer-copy a {
+  color: var(--color-borde);
+  text-decoration: underline;
+  font-size: 12px;
+  transition: color 0.3s ease;
+}
+
+.footer-copy a:hover {
+  color: var(--color-fondo);
+}
+
+.footer-copy .licencia {
+  font-size: 11px;
+  color: var(--color-borde);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.cc-icons {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.cc-icon {
+  width: 13px;
+  height: 13px;
+  opacity: 0.8;
+  filter: invert(100%);
+  transition: opacity 0.3s ease;
+}
+
+.cc-icon:hover {
+  opacity: 1;
+}
 
 /* Tarjetas Productos */
 .cards {
