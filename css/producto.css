@@ -1,7 +1,7 @@
 .detalle-producto {
   padding: 80px;
   font-family: "Roboto", sans-serif;
-  color: #111;
+  color: var(--color-secundario);
 }
 
 .producto-principal {
@@ -14,7 +14,7 @@
 .imagen-producto img {
   width: 420px;
   border-radius: 20px;
-  background-color: #fff8ef;
+  background-color: var(--color-fondo);
 }
 
 .info-producto {
@@ -28,7 +28,7 @@
 }
 
 .info-producto .subtitulo {
-  color: #444;
+  color: var(--color-secundario);
   margin-bottom: 20px;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .valoracion a {
-  color: #666;
+  color: var(--color-borde);
   font-size: 14px;
   margin-left: 8px;
   text-decoration: none;
@@ -62,7 +62,7 @@
 }
 
 .cantidad button {
-  background-color: #f1f1f1;
+  background-color: var(--color-borde);
   border: none;
   padding: 6px 12px;
   border-radius: 50%;
@@ -71,13 +71,9 @@
   transition: 0.3s;
 }
 
-.cantidad button:hover {
-  background-color: #ddd;
-}
-
 .boton-principal {
-  background-color: #111;
-  color: #fff;
+  background-color: var(--color-secundario);
+  color: var(--color-fondo);
   border: none;
   padding: 12px 40px;
   border-radius: 25px;
@@ -87,7 +83,7 @@
 }
 
 .boton-principal:hover {
-  background-color: #333;
+  background-color: var(--color-hover-secundario);
 }
 
 .descripcion p {
@@ -109,7 +105,7 @@
 .linea-verde {
   width: 100%;
   height: 12px;
-  background-color: #DDF1D2;
+  background-color: var(--color-principal);
   border-radius: 10px;
   margin-bottom: 70px;
 }
@@ -138,8 +134,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #fbfbfb;
-  border: 1px solid #ddd;
+  background-color: var(--color-fondo);
+  border: 1px solid var(--color-borde);
   border-radius: 14px;
   padding: 15px;
   text-align: center;
@@ -152,7 +148,6 @@
 
 .tarjeta-producto:hover {
   transform: translateY(-4px);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
 .tarjeta-producto img {
@@ -164,7 +159,7 @@
 
 .tarjeta-producto h4 {
   font-size: 14px; 
-  color: #111;
+  color: var(--color-secundario);
   margin-bottom: 5px;
   font-weight: 600;
   line-height: 1.3;
@@ -172,21 +167,21 @@
 }
 
 .valoracion {
-  color: black;
+  color: var(--color-secundario);
   font-size: 13px; 
   margin-bottom: 6px;
 }
 
 .precio {
   font-weight: 600;
-  color: #222;
+  color: var(--color-secundario);
   font-size: 15px; 
   margin-bottom: 10px;
 }
 
 .boton {
-  background-color: #111;
-  color: #fff;
+  background-color: var(--color-secundario);
+  color: var(--color-fondo);
   border: none;
   padding: 8px;
   border-radius: 20px;
@@ -198,7 +193,7 @@
 }
 
 .boton:hover {
-  background-color: #333;
+  background-color: var(--color-hover-secundario);
 }
 
 

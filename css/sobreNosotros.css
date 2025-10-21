@@ -1,7 +1,7 @@
 .sobre-nosotros {
   padding: 80px 100px;
   font-family: "Roboto", sans-serif;
-  color: #111;
+  color: var(--color-secundario);
 }
 
 .sobre-nosotros h2 {
@@ -18,7 +18,7 @@
   line-height: 1.6;
   max-width: 850px;
   margin: 0 auto 80px;
-  color: #111;
+  color: var(--color-secundario);
 }
 
 .secreto {
@@ -40,7 +40,7 @@
   font-family: "Playfair Display", serif;
   font-size: 28px;
   font-weight: 600;
-  color: #111;
+  color: var(--color-secundario);
   margin-top: 10px;
   line-height: 1.3;
 }
@@ -52,7 +52,7 @@
 .columna-der p {
   font-size: 15.5px;
   line-height: 1.7;
-  color: #222;
+  color: var(--color-secundario);
   margin-bottom: 18px;
 }
 
@@ -83,7 +83,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--color-fondo);
   text-align: center;
 }
 
@@ -108,8 +108,8 @@
 }
 
 .interesado button {
-  background-color: #f5f8f1;
-  color: #333;
+  background-color: var(--color-terciario);
+  color: var(--color-secundario);
   border: none;
   padding: 10px 35px;
   border-radius: 25px;
@@ -118,8 +118,3 @@
   font-size: 14px;
   transition: 0.3s;
 }
-
-.interesado button:hover {
-  background-color: #DDF1D2;
-}
-

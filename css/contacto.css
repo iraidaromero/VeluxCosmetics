@@ -1,7 +1,7 @@
 .contacto {
   padding: 80px 100px;
   font-family: "Roboto", sans-serif;
-  color: #111;
+  color: var(--color-secundario);
 }
 
 .contacto h2 {
@@ -15,7 +15,7 @@
   text-align: center;
   max-width: 800px;
   margin: 0 auto 60px;
-  color: #111;
+  color: var(--color-secundario);
   line-height: 1.6;
 }
 
@@ -35,7 +35,7 @@
 .formulario h3 {
   font-size: 24px;
   margin-bottom: 25px;
-  color: #111;
+  color: var(--color-secundario);
 }
 
 .formulario form {
@@ -47,7 +47,7 @@
 .formulario input,
 .formulario textarea {
   padding: 14px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-borde);
   border-radius: 8px;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
@@ -58,8 +58,8 @@
 }
 
 .formulario button {
-  background-color: #DDF1D2;
-  color: #fff;
+  background-color: var(--color-principal);
+  color: var(--color-fondo);
   border: none;
   padding: 14px;
   border-radius: 8px;
@@ -67,10 +67,6 @@
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
-}
-
-.formulario button:hover {
-  background-color: #c3e6b8;
 }
 
 .info-contacto {
@@ -87,7 +83,7 @@
   text-align: center;
   gap: 10px;
   font-size: 15px;
-  color: #111;
+  color: var(--color-secundario);
 }
 
 .dato img {
