@@ -196,4 +196,38 @@
   background-color: var(--color-hover-secundario);
 }
 
+/* Producto 2 */
+.producto-principal {
+  margin-bottom: 80px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-producto {
+  padding-top: 10px;
+}
+
+.info-producto h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.imagen-producto img {
+  width: 420px;
+  border-radius: 20px;
+}
+
+.relacionados {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.relacionados h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 35px;
+}
 

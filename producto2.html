@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sérum Vitamina C | Velux Cosmetics</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/colores.css">
+  <link rel="stylesheet" href="css/producto.css">
+  <link rel="icon" type="image/x-icon" href="img/logo/favicon1.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Cabecera -->
+  <div class="banner text-center py-2">
+    <p class="mb-0">ENVÍO GRATIS | ENTREGA 24/48H</p>
+  </div>
+
+  <header class="d-flex justify-content-between align-items-center px-4 py-3">
+    <div class="d-flex align-items-center gap-3">
+      <img src="img/nav/nav.png" alt="Menú" class="icono-menu" id="abrir-menu">
+      <div class="buscador d-flex align-items-center">
+        <img src="img/nav/search.png" alt="Buscar" class="icon me-2">
+        <input type="text" placeholder="Buscar en Velux Cosmetics">
+      </div>
+    </div>
+
+    <div class="logo text-center">
+      <img src="img/logo/logo.png" alt="Velux Cosmetics">
+    </div>
+
+    <div class="iconos d-flex align-items-center gap-3">
+      <a href="login.html"><img src="img/nav/user.png" alt="Usuario" class="icon"></a>
+      <img src="img/nav/heart.png" alt="Favoritos" class="icon">
+      <img src="img/nav/cart.png" alt="Carrito" class="icon">
+    </div>
+  </header>
+
+  <!-- Menú de navegación -->
+  <nav class="menu-lateral" id="menu-lateral">
+    <div class="cabecera-menu">
+      <img src="img/logo/logo.png" alt="Velux Cosmetics" class="logo-menu">
+      <button id="cerrar-menu">✕</button>
+    </div>
+
+    <ul class="lista-menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="todosProductos.html">Todos los productos</a></li>
+
+      <li class="item-categorias">
+        <div class="titulo-categoria">
+          <span><a href="categorias.html">Categorías</a></span>
+          <button class="boton-submenu">+</button>
+        </div>
+        <ul class="submenu">
+          <li><a href="categorias.html">Ver todo</a></li>
+          <li><a href="categorias.html#facial">Facial</a></li>
+          <li><a href="categorias.html#corporal">Corporal</a></li>
+          <li><a href="categorias.html#capilar">Capilar</a></li>
+        </ul>
+      </li>
+
+
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
+    </ul>
+  </nav>
+
+  <div class="fondo-oscuro" id="fondo-oscuro"></div>
+
+  <main class="detalle-producto container my-5">
+
+    <section class="producto-principal row justify-content-center align-items-start g-5 mb-5">
+      
+      <div class="col-lg-5 col-md-6 d-flex justify-content-center">
+        <img src="img/productos/capilar/ProtectorTermico.png" alt="Protector Térmico" class="img-fluid rounded" style="max-width: 420px; background-color: var(--color-fondo); border-radius: 20px;">
+      </div>
+
+      <div class="col-lg-5 col-md-6 info-producto">
+        <h2>Protector Térmico</h2>
+        <p class="subtitulo">Protector térmico pelo con keratina</p>
+
+        <p class="precio">19,95 €</p>
+
+        <div class="valoracion">
+          ★★★★☆ <span>(4/5)</span>
+          <a href="#">ver 1428 opiniones</a>
+        </div>
+
+        <div class="cantidad d-flex align-items-center gap-2">
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </div>
+
+        <button class="boton-principal">LO QUIERO</button>
+
+        <div class="descripcion">
+          <p><strong>Fórmula 99,9% natural | Sin siliconas | Todo tipo de cabellos</strong></p>
+          <p>
+            ¿Quieres proteger tu pelo del daño térmico y desenredarlo fácilmente? Descubre los beneficios de este protector térmico 99,4% natural, con keratina vegetal y sin siliconas, para mejorar el pelo seco, encrespado y sin brillo.
+          </p>
+          <h4>Beneficios</h4>
+          <ul>
+            <li>Desenreda y facilita el peinado en un 39% en cada cepillado</li>
+            <li>Aumenta en un 44% la resistencia del cabello ante daños térmicos</li>
+            <li>Protege de la radiación solar un 62%</li>
+            <li>Incrementa un 36% el brillo y un 14% la hidratación capilar</li>
+            <li>Repara hasta en un 90% las cutículas dañadas</li>
+            <li>Repara y mejora notablemente la salud del cabello</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="linea-verde my-5"></div>
+
+    <!-- Productos relacionados -->
+    <section class="relacionados text-center">
+      <h3>Relacionados</h3>
+
+      <div class="row justify-content-center g-4 mt-4">
+        <div class="col-6 col-md-3">
+          <div class="tarjeta-producto">
+            <img src="img/productos/facial/HidratantePieles.png" alt="">
+            <h4>Hidratante pieles grasas y mixtas</h4>
+            <div class="valoracion">★★★★☆</div>
+            <p class="precio">29,95 €</p>
+            <button class="boton">AÑADIR AL CARRITO</button>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="tarjeta-producto">
+            <img src="img/productos/facial/Balsamo.png" alt="">
+            <h4>Bálsamo labial 100% natural</h4>
+            <div class="valoracion">★★★★☆</div>
+            <p class="precio">7,95 €</p>
+            <button class="boton">AÑADIR AL CARRITO</button>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="tarjeta-producto">
+            <img src="img/productos/facial/SerumPestanas.png" alt="">
+            <h4>Sérum para las pestañas</h4>
+            <div class="valoracion">★★★★☆</div>
+            <p class="precio">35,95 €</p>
+            <button class="boton">AÑADIR AL CARRITO</button>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="tarjeta-producto">
+            <img src="img/productos/corporal/CremaCorporal.png" alt="">
+            <h4>Crema Hidratante corporal</h4>
+            <div class="valoracion">★★★★☆</div>
+            <p class="precio">22,95 €</p>
+            <button class="boton">AÑADIR AL CARRITO</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-contenedor">
+      <div class="footer-logo">
+        <img src="img/logo/logo_negativo.png" alt="Velux Cosmetics">
+      </div>
+
+      <div class="footer-newsletter">
+        <h3>¡Suscríbete y consigue tu 20%!</h3>
+        <p>Vas a recibir novedades, descuentos y consejos de utilidad para cuidar tu piel y tu cabello con mucho amor.</p>
+        <div class="input-email">
+          <input type="email" placeholder="Correo electrónico">
+          <button><img src="img/nav/arrow.png" alt="Enviar"></button>
+        </div>
+      </div>
+
+      <div class="footer-legal">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Aviso Legal</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Política de Devoluciones</a></li>
+          <li><a href="#">Política de Cookies</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contacto">
+        <h4>Contacto</h4>
+        <p><img src="img/nav/phone.png" class="icon"> 684-029-127</p>
+        <p><img src="img/nav/mail.png" class="icon"> info@veluxcosmetics.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
