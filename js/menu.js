@@ -11,6 +11,8 @@ botonAbrir.addEventListener("click", () => {
 });
 
 botonCerrar.addEventListener("click", () => {
+  sonidoMenu.currentTime = 0; 
+  sonidoMenu.play();  
   menuLateral.classList.remove("activo");
   fondoOscuro.classList.remove("activo");
 });
