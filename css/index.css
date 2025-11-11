@@ -16,6 +16,15 @@
   border-radius: 18px;
 }
 
+.banner-ancho video {
+  width: 1250px;
+  height: 300px;
+  display: inline-block;
+  object-fit: cover; 
+  border-radius: 0; 
+}
+
+
 /* Productos */
 .seccion-productos {
   padding: 40px 20px 100px;

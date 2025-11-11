@@ -4,6 +4,8 @@ const botonAbrir = document.getElementById("abrir-menu");
 const botonCerrar = document.getElementById("cerrar-menu");
 
 botonAbrir.addEventListener("click", () => {
+  sonidoMenu.currentTime = 0; 
+  sonidoMenu.play();  
   menuLateral.classList.add("activo");
   fondoOscuro.classList.add("activo");
 });

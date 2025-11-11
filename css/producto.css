@@ -144,6 +144,7 @@
   width: 100%;
   max-width: 210px; 
   margin: 0 auto;
+  text-decoration: none;
 }
 
 .tarjeta-producto:hover {
