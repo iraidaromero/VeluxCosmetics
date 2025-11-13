@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Velux Cosmetics | Cosmética Natural y Vegana</title>
-<!--   <link rel="stylesheet" href="css/global.css">
+<!-- <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/colores.css"> -->
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="icon" type="image/x-icon" href="img/logo/favicon1.ico">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
@@ -78,6 +79,32 @@
   <div class="fondo-oscuro" id="fondo-oscuro"></div>
 
   <main>
+
+    <!-- CARRUSEL BOOTSTRAP -->
+  <section class="container mt-4">
+    <div id="carruselVelux" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-inner rounded-4 shadow">
+        <div class="carousel-item active">
+          <img src="img/banner/banner1.png" class="d-block w-100" alt="Banner 1 Velux">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/banner/banner2.png" class="d-block w-100" alt="Banner 2 Velux">
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" data-bs-target="#carruselVelux" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" data-bs-target="#carruselVelux" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </section>
     <!-- Banner principal -->
     <section class="seccion-banner">
       <div class="banner-ancho">
@@ -262,6 +289,7 @@
     </div>
   </footer>
 
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
   <script src="./js/menu.js"></script>
 
