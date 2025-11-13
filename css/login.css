@@ -1,0 +1,82 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--color-fondo);
+}
+
+.contenedor-login {
+  max-width: 420px;
+  margin: 70px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px var(--color-borde);
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 25px;
+  width: 120px;
+}
+
+.navegacion-login {
+  border: none;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.nav-link {
+  border: none;
+  color: #777;
+  font-weight: 500;
+}
+
+.nav-link.active {
+  color: #111;
+  border-bottom: 2px solid var(--color-principal)
+}
+
+.formulario-login label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: var(--color-secundario);
+}
+
+.campo {
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.campo:focus {
+  border-color: #DDF1D2;
+  box-shadow: 0 0 0 0.1rem var(--color-principal);
+}
+
+.btn-principal {
+  background-color: var(--color-principal);
+  border: none;
+  color: var(--color-secundario);
+  font-weight: 500;
+  transition: 0.3s;
+  border-radius: 25px;
+  padding: 10px 0;
+}
+
+.btn-principal:hover {
+  background-color: var(--color-hover-principal);
+  color: #000;
+}
+
+.enlace-secundario {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.enlace-secundario a {
+  color: var(--color-principal);
+  text-decoration: none;
+}
+
+.enlace-secundario a:hover {
+  text-decoration: underline;
+}

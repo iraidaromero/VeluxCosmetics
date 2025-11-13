@@ -1,9 +1,8 @@
 @charset "UTF-8";
-/* 🎨 VARIABLES GLOBALES */
 /* Colores principales */
 /* Tipografías */
 /* Tamaños y bordes */
-/* Variables CSS globales (mantienen compatibilidad con tu código actual) */
+/* Variables CSS globales */
 :root {
   --color-principal: #DDF1D2;
   --color-secundario: #1E1E1E;
@@ -14,7 +13,7 @@
   --color-borde: #ccc;
 }
 
-/* Variables SASS equivalentes (para uso interno o cálculos futuros) */
+/* Variables SASS equivalentes */
 /* Reset básico */
 * {
   margin: 0;
@@ -42,7 +41,6 @@ body {
   left: 90px;
 }
 
-/* 🅰️ TIPOGRAFÍAS GLOBALES */
 /* Fuentes principales */
 body {
   font-family: "Roboto", sans-serif;

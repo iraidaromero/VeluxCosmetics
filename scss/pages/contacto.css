@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* Página de contacto */
+.contacto {
+  padding: 80px 100px;
+  font-family: "Roboto", sans-serif;
+  color: var(--color-secundario);
+}
+
+.contacto h2 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.contacto .intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px;
+  color: var(--color-secundario);
+  line-height: 1.6;
+}
+
+.contenedor-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+/* Información de contacto */
+.info-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-top: 55px;
+}
+
+.dato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  font-size: 15px;
+  color: var(--color-secundario);
+}
+
+.dato img {
+  width: 38px;
+  opacity: 0.8;
+}/*# sourceMappingURL=contacto.css.map */

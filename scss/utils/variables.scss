@@ -1,5 +1,3 @@
-/* 🎨 VARIABLES GLOBALES */
-
 /* Colores principales */
 $color-principal: #DDF1D2;
 $color-secundario: #1E1E1E;
@@ -12,6 +10,13 @@ $color-borde: #ccc;
 /* Tipografías */
 $fuente-base: "Roboto", sans-serif;
 $fuente-titulo: "Playfair Display", serif;
+
+/* Sobrescribir colores de Bootstrap */
+$primary: #DDF1D2;
+$secondary: #1E1E1E;
+$success: #98c9a3;
+$dark: #111;
+$light: #fff8ef;
 
 /* Tamaños y bordes */
 $radio-borde: 10px;

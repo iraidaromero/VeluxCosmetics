@@ -1,0 +1,14 @@
+/* Banner cabecera principal */
+.banner {
+  background-color: var(--color-principal);
+  text-align: center;
+  font-size: 12px;
+  padding: 5px 0;
+  color: var(--color-secundario);
+}
+
+.banner p {
+  display: inline-block;
+  position: relative;
+  left: 90px;
+}/*# sourceMappingURL=global.css.map */
