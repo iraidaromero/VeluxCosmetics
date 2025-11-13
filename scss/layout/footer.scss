@@ -1,0 +1,155 @@
+/* Footer */
+footer {
+  background-color: var(--color-secundario);
+  color: var(--color-fondo);
+  padding: 60px 80px 20px;
+}
+
+.footer-contenedor {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--color-secundario);
+  padding-bottom: 30px;
+  gap: 40px;
+}
+
+.footer-logo img {
+  height: 70px;
+}
+
+.footer-newsletter {
+  max-width: 350px;
+}
+
+.footer-newsletter h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-newsletter p {
+  font-size: 13px;
+  margin-bottom: 15px;
+  color: var(--color-borde);
+}
+
+.input-email {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-borde);
+  width: 100%;
+}
+
+.input-email input {
+  background: none;
+  border: none;
+  color: var(--color-borde);
+  flex: 1;
+  padding: 8px 0;
+  font-size: 13px;
+}
+
+.input-email button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.input-email img {
+  width: 18px;
+}
+
+.footer-legal h4,
+.footer-contacto h4 {
+  margin-bottom: 10px;
+}
+
+.footer-legal ul {
+  list-style: none;
+}
+
+.footer-legal li {
+  margin-bottom: 6px;
+}
+
+.footer-legal a {
+  color: var(--color-borde);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer-contacto p {
+  font-size: 13px;
+  color: var(--color-borde);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  font-size: 12px;
+  color: var(--color-borde);
+}
+
+.footer-redes {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-redes .icon {
+  width: 22px;
+  height: 22px;
+}
+
+.footer-copy {
+  text-align: center;
+  flex: 1;
+}
+
+.footer-copy p {
+  margin: 3px 0;
+}
+
+.footer-copy a {
+  color: var(--color-borde);
+  text-decoration: underline;
+  font-size: 12px;
+  transition: color 0.3s ease;
+}
+
+.footer-copy a:hover {
+  color: var(--color-fondo);
+}
+
+.footer-copy .licencia {
+  font-size: 11px;
+  color: var(--color-borde);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.cc-icons {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.cc-icon {
+  width: 13px;
+  height: 13px;
+  opacity: 0.8;
+  filter: invert(100%);
+  transition: opacity 0.3s ease;
+}
+
+.cc-icon:hover {
+  opacity: 1;
+}

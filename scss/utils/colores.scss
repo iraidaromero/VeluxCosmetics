@@ -1,0 +1,19 @@
+/* Variables CSS globales (mantienen compatibilidad con tu código actual) */
+:root {
+  --color-principal: #DDF1D2;
+  --color-secundario: #1E1E1E;
+  --color-terciario: #fef7df;
+  --color-hover-principal: #FEF7DF;
+  --color-hover-secundario: #4d4d4d;
+  --color-fondo: #ffffff;
+  --color-borde: #ccc;
+}
+
+/* Variables SASS equivalentes (para uso interno o cálculos futuros) */
+$color-principal: #DDF1D2;
+$color-secundario: #1E1E1E;
+$color-terciario: #fef7df;
+$color-hover-principal: #FEF7DF;
+$color-hover-secundario: #4d4d4d;
+$color-fondo: #ffffff;
+$color-borde: #ccc;
