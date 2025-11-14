@@ -1,11 +1,16 @@
 /* Cabecera */
 header {
+  top: 24px;
+  position: fixed; 
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
   background-color: var(--color-fondo);
   color: var(--color-secundario);
+  z-index: 1000; 
 }
 
 .menu-buscador {

@@ -7,6 +7,7 @@
 
 body {
   color: var(--color-fondo);
+  padding-top: 120px;
 }
 
 /* Banner cabecera principal */
@@ -16,22 +17,34 @@ body {
   font-size: 12px;
   padding: 5px 0;
   color: var(--color-secundario);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .banner p {
   display: inline-block;
-  position: relative;
-  left: 90px;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  position: static;
 }
 
 /* Cabecera */
 header {
+  top: 24px;
+  position: fixed; 
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
   background-color: var(--color-fondo);
   color: var(--color-secundario);
+  z-index: 1000; 
 }
 
 .menu-buscador {
@@ -387,4 +400,54 @@ footer {
 .icono-menu {
   cursor: pointer;
   width: 22px;
+}
+
+/* Animación pulse */
+.chat-atencion {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 9999;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.chat-atencion img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.chat-atencion::before {
+  content: '';
+  position: absolute;
+  width: 160%;       
+  height: 160%;
+  border-radius: 50%;
+  background-color: #DDF1D2; 
+  opacity: 1.0;                    
+  animation: pulse-ring 1.8s ease-out infinite;
+  z-index: 1;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.3);
+    opacity: 1.0;
+  }
+  80% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
