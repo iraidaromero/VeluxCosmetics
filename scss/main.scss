@@ -9,6 +9,7 @@
 
 // Layout
 @use "layout/header";
+@use "layout/banner";
 @use "layout/footer";
 @use "layout/estructura";
 
@@ -16,6 +17,7 @@
 @use "components/botones";
 @use "components/formularios";
 @use "components/tarjetas";
+@use "components/chat";
 
 // Pages
 @use "pages/index";
@@ -24,4 +26,3 @@
 @use "pages/sobreNosotros";
 @use "pages/producto";
 @use "pages/todosProductos";
-
