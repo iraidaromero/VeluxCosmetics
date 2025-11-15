@@ -38,7 +38,42 @@
 }
 
 /* Botón interesado */
-.boton-interesado {
+.interesado {
+  position: relative;
+  background-image: url("../img/banner/banner1.png"); 
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-fondo);
+  text-align: center;
+}
+
+.interesado::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25); 
+  border-radius: 16px;
+}
+
+.interesado h3,
+.interesado button {
+  position: relative;
+  z-index: 2;
+}
+
+.interesado h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.interesado button {
   background-color: var(--color-terciario);
   color: var(--color-secundario);
   border: none;
