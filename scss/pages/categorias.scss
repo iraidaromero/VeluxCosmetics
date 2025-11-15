@@ -89,3 +89,48 @@
   text-align: left;
   margin-left: 5px;
 }
+
+/* --- Animación  --- */
+.tarjeta-categoria {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease;
+}
+
+.tarjeta-categoria:hover {
+  transform: translateY(-8px) rotateX(4deg) rotateY(-4deg);
+}
+
+.tarjeta-categoria:hover img {
+  opacity: 0.5;
+  transition: opacity 0.4s ease;
+}
+
+.info-extra {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  width: 80%;
+  transform: translateX(-50%) translateY(20px);
+  opacity: 0;
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.5);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+}
+
+.tarjeta-categoria:hover .info-extra {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.linea-verde {
+  width: 100%;
+  height: 15px;
+  background-color: var(--color-principal);
+  margin-top: 80px;
+  border-radius: 10px 10px 0 0;
+}
