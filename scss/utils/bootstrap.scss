@@ -1,0 +1,8 @@
+@use "../../node_modules/bootstrap/scss/bootstrap" 
+  with (
+    $primary: #DDF1D2,
+    $secondary: #1E1E1E,
+    $body-bg: #ffffff,
+    $body-color: #1E1E1E,
+    $font-family-base: "Roboto, sans-serif"
+  );

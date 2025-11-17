@@ -1,0 +1,58 @@
+@use "../utils/colores";
+@use "../utils/variables";
+
+.contenedor-login {
+  max-width: 450px;
+  margin: -5rem auto;
+  padding: 2rem 2.5rem;
+  background-color: colores.$color-fondo;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.contenedor-login .logo {
+  display: block;
+  max-width: 180px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.navegacion-login {
+  justify-content: center;
+  border-bottom: 1px solid colores.$color-borde;
+  margin-bottom: 1.5rem;
+
+  .nav-link {
+    color: colores.$color-secundario; 
+    border: none;
+    background: none;
+
+    &.active {
+      color: colores.$color-principal; 
+      font-weight: 500;
+      border-bottom: 2px solid colores.$color-principal;
+    }
+
+    &:hover:not(.active) {
+      color: colores.$color-hover-secundario;
+    }
+  }
+}
+
+.formulario-login {
+  margin-top: 1.5rem;
+}
+
+.enlace-secundario {
+  text-align: center;
+  margin-top: 1.5rem;
+  
+  a {
+    font-size: 0.9rem;
+    color: colores.$color-secundario;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

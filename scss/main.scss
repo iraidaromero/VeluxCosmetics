@@ -1,27 +1,26 @@
-// Utils
 @use "utils/variables";
 @use "utils/colores";
-
-// Base
-@use "base/reset";
-@use "base/global";
 @use "base/tipografia";
 
-// Layout
+@use "utils/bootstrap";
+
+@use "base/reset";
+@use "base/global";
+
 @use "layout/header";
 @use "layout/menu";
 @use "layout/footer";
 
-// Components
 @use "components/botones";
 @use "components/formularios";
 @use "components/tarjetas";
 @use "components/chat";
 
-// Pages
 @use "pages/index";
 @use "pages/categorias";
 @use "pages/contacto";
 @use "pages/sobreNosotros";
 @use "pages/producto";
 @use "pages/todosProductos";
+@use "pages/login"; 
+@use "pages/promocion";

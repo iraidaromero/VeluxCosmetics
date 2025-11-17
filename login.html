@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Velux Cosmetics</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" type="image/x-icon" href="img/logo/favicon1.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+  <div class="contenedor-login">
+    <img src="img/logo/logo.png" alt="Velux Cosmetics" class="logo">
+
+    <ul class="nav nav-tabs navegacion-login" id="pestanasLogin" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="iniciar-tab" data-bs-toggle="tab" data-bs-target="#iniciar" type="button" role="tab" aria-controls="iniciar" aria-selected="true">Iniciar sesión</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="registrar-tab" data-bs-toggle="tab" data-bs-target="#registrar" type="button" role="tab" aria-controls="registrar" aria-selected="false">Registrarse</button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+      
+      <div class="tab-pane fade show active" id="iniciar" role="tabpanel" aria-labelledby="iniciar-tab">
+        <form class="formulario-login">
+          <div class="mb-3">
+            <label for="correo-login" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo-login" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="clave-login" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="clave-login" required>
+          </div>
+
+          <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#loginSuccessModal">
+            Iniciar sesión
+          </button>
+        </form>
+
+        <div class="enlace-secundario">
+          <a href="#">¿Has olvidado tu contraseña?</a>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="registrar" role="tabpanel" aria-labelledby="registrar-tab">
+        <form class="formulario-login">
+          <div class="mb-3">
+            <label for="nombre-registro" class="form-label">Nombre completo</label>
+            <input type="text" class="form-control" id="nombre-registro" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="correo-registro" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo-registro" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="clave-registro" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="clave-registro" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="confirmar-clave" class="form-label">Confirmar contraseña</label>
+            <input type="password" class="form-control" id="confirmar-clave" required>
+          </div>
+
+          <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#registerSuccessModal">
+            Crear cuenta
+          </button>
+          </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="loginSuccessModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="modalLabel">¡Bienvenida de nuevo!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <p>Has iniciado sesión correctamente en Velux Cosmetics.</p>
+        </div>
+        <div class="modal-footer border-0 justify-content-center">
+            <a href="index.html" class="btn btn-primary">Seguir comprando</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="registerSuccessModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="registerModalLabel">¡Registro completado!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <p>Te has registrado correctamente en Velux Cosmetics.</p>
+          <p>¡Bienvenida a la familia!</p>
+        </div>
+        <div class="modal-footer border-0 justify-content-center">
+          <a href="index.html" class="btn btn-primary">Empezar a comprar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

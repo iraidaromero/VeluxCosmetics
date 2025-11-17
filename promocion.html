@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promoción Bienvenida | Velux Cosmetics</title>
+  
+  <link rel="stylesheet" href="css/main.css"> <link rel="icon" type="image/x-icon" href="img/logo/favicon1.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+    <div class="container my-5">
+      <div class="p-5 mb-4 bg-light rounded-3 text-center">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold">¡Tu Primera Compra Tiene Premio!</h1>
+          <p class="fs-4 col-md-10 mx-auto">
+            Estamos encantados de verte por aquí. Como bienvenida, disfruta de un 
+            <strong>20% de descuento</strong>.
+          </p>
+          <hr class="my-4">
+          <p>Usa el siguiente código en la pantalla de pago:</p>
+          <h2 class="display-4 text-secondary fw-bold">BIENVENIDA20</h2>
+          
+          <button type="button" class="btn btn-secondary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#promoProductModal">
+            Empezar a comprar
+          </button>
+          </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="modal fade" id="promoProductModal" tabindex="-1" aria-labelledby="promoProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="promoProductModalLabel">¡Añade tus favoritos al carrito!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+          <div id="promoCarousel" class="carousel" data-bs-ride="false">
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <div class="rejilla-productos">
+                  <a href="producto.html" class="tarjeta-producto">
+                    <img src="img/productos/facial/SerumVitaminaC.png" alt="Sérum vitamina C">
+                    <h4>Sérum Vitamina C</h4>
+                    <p class="precio">35,95 €</p>
+                    <button class="boton">AÑADIR AL CARRITO</button>
+                  </a>
+                  <a href="producto.html" class="tarjeta-producto">
+                    <img src="img/productos/corporal/CremaCorporal.png" alt="Crema hidratante corporal">
+                    <h4>Crema Hidratante</h4>
+                    <p class="precio">22,95 €</p>
+                    <button class="boton">AÑADIR AL CARRITO</button>
+                  </a>
+                  <a href="producto.html" class="tarjeta-producto">
+                    <img src="img/productos/capilar/ProtectorTermico.png" alt="Protector térmico pelo">
+                    <h4>Protector térmico</h4>
+                    <p class="precio">19,95 €</p>
+                    <button class="boton">AÑADIR AL CARRITO</button>
+                  </a>
+                  <a href="producto.html" class="tarjeta-producto">
+                    <img src="img/productos/capilar/ChampuAnticaida.png" alt="Champú anticaída">
+                    <h4>Champú anticaída</h4>
+                    <p class="precio">19,95 €</p>
+                    <button class="boton">AÑADIR AL CARRITO</button>
+                  </a>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="rejilla-productos">
+                  <a href="producto.html" class="tarjeta-producto">
+                    <img src="img/productos/capilar/ChampuAnticaida.png" alt="Champú anticaída">
+                    <h4>Champú anticaída</h4>
+                    <p class="precio">19,95 €</p>
+                    <button class="boton">AÑADIR AL CARRITO</button>
+                  </a>
+                  <a href="producto.html" class="tarjeta-producto">
+                    <img src="img/productos/capilar/ProtectorTermico.png" alt="Protector térmico pelo">
+                    <h4>Protector térmico</h4>
+                    <p class="precio">19,95 €</p>
+                    <button class="boton">AÑADIR AL CARRITO</button>
+                  </a>
+                  <a href="producto.html" class="tarjeta-producto">
+                    <img src="img/productos/corporal/CremaCorporal.png" alt="Crema hidratante corporal">
+                    <h4>Crema Hidratante</h4>
+                    <p class="precio">22,95 €</p>
+                    <button class="boton">AÑADIR AL CARRITO</button>
+                  </a>
+                  <a href="producto.html" class="tarjeta-producto">
+                    <img src="img/productos/facial/SerumVitaminaC.png" alt="Sérum vitamina C">
+                    <h4>Sérum Vitamina C</h4>
+                    <p class="precio">35,95 €</p>
+                    <button class="boton">AÑADIR AL CARRITO</button>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+          </div>
+        <div class="modal-footer">
+          <a href="todosProductos.html" class="btn btn-secondary">Ver todos los productos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
