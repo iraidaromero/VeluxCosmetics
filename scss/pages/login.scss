@@ -8,6 +8,15 @@
   background-color: colores.$color-fondo;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  .form-control {
+    color: #000 !important;          
+    background-color: #fff;          
+  }
+
+  .form-label {
+    color: #000 !important;          
+  }
 }
 
 .contenedor-login .logo {

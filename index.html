@@ -1,596 +1,301 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Velux Cosmetics | Cosmética Natural y Vegana</title>
-
     <!-- <link rel="stylesheet" href="css/global.css">
-
 <link rel="stylesheet" href="css/index.css">
-
 <link rel="stylesheet" href="css/colores.css"> -->
-
     <link rel="stylesheet" href="css/main.css">
-
     <link rel="icon" type="image/x-icon" href="img/logo/favicon1.ico">
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
-
-
 <body>
-
-
-
     <!-- Atención boton fijo -->
-
     <div class="chat-atencion">
-
         <img src="img/nav/message.png" alt="Atención al cliente">
-
     </div>
-
-
 
     <!-- Cabecera -->
-
     <div class="banner">
-
         <p>ENVÍO GRATIS | ENTREGA 24/48H</p>
-
     </div>
 
-
-
     <header>
-
         <div class="menu-buscador">
-
             <img src="img/nav/nav.png" alt="Menú" class="icono-menu" id="abrir-menu">
-
             <div class="buscador">
-
                 <img src="img/nav/search.png" alt="Buscar" class="icon">
-
                 <input type="text" placeholder="Buscar en Velux Cosmetics">
-
             </div>
-
         </div>
-
-
 
         <audio id="sonidoMenu" src="media/audio.mp3"></audio>
 
-
-
         <div class="logo">
-
             <img src="img/logo/logo.png" alt="Velux Cosmetics">
-
         </div>
 
-
-
         <div class="iconos">
-
             <a href="login.html">
-
                 <img src="img/nav/user.png" alt="Usuario" class="icon">
-
             </a>
 
             <img src="img/nav/heart.png" alt="Favoritos" class="icon">
 
             <a href="pago.html">
                 <img src="img/nav/cart.png" alt="Carrito" class="icon">
-
             </a>
-
-
         </div>
-
     </header>
 
-
-
     <!-- Menú de navegación -->
-
     <nav class="menu-lateral" id="menu-lateral">
-
         <div class="cabecera-menu">
-
             <img src="img/logo/logo.png" alt="Velux Cosmetics" class="logo-menu">
-
             <button id="cerrar-menu">✕</button>
-
         </div>
 
-
-
         <ul class="lista-menu">
-
             <li><a href="index.html">Inicio</a></li>
-
             <li><a href="todosProductos.html">Todos los productos</a></li>
-
-
-
             <li class="item-categorias">
-
                 <div class="titulo-categoria">
-
                     <span><a href="categorias.html">Categorías</a></span>
-
                     <button class="boton-submenu">+</button>
-
                 </div>
-
                 <ul class="submenu">
-
                     <li><a href="categorias.html">Ver todo</a></li>
-
                     <li><a href="categorias.html#facial">Facial</a></li>
-
                     <li><a href="categorias.html#corporal">Corporal</a></li>
-
                     <li><a href="categorias.html#capilar">Capilar</a></li>
-
                 </ul>
-
             </li>
-
-
-
-
-
             <li><a href="contacto.html">Contacto</a></li>
-
             <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
-
         </ul>
-
     </nav>
-
-
 
     <div class="fondo-oscuro" id="fondo-oscuro"></div>
 
-
-
     <main>
-
-
-
         <!-- Banner principal -->
-
         <section class="seccion-banner">
-
             <div class="banner-ancho">
-
                 <img src="img/banner/banner1.png" alt="Ambiente natural Velux">
-
             </div>
-
         </section>
 
-        <section class="seccion-promocion bg-light py-5"> <div class="container text-center">
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <h2 class="display-6 fw-bold">¿Es tu primera vez aquí?</h2>
-        <p class="lead my-3">
-          Tenemos un regalo especial para ti. Descubre tu descuento de bienvenida 
-          y empieza a cuidarte con Velux Cosmetics.
-        </p>
-        <a href="promocion.html" class="btn btn-secondary btn-lg">
-          Ver Promoción
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
+        <section class="seccion-promocion py-5">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <h2 class="display-6 fw-bold">¿Es tu primera vez aquí?</h2>
+                        <p class="lead my-3">
+                            Tenemos un regalo especial para ti. Descubre tu descuento de bienvenida
+                            y empieza a cuidarte con Velux Cosmetics.
+                        </p>
+                        <a href="promocion.html" class="btn btn-secondary btn-lg">
+                            Ver Promoción
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Productos -->
-
         <section class="seccion-productos">
-
             <div class="rejilla-productos">
-
                 <a href="producto.html" class="tarjeta-producto">
-
                     <img src="img/productos/facial/SerumVitaminaC.png" alt="Sérum vitamina C">
-
                     <h4>Sérum Vitamina C</h4>
-
                     <div class="valoracion">★★★★☆</div>
-
                     <p class="precio">35,95 €</p>
-
                     <button class="boton">AÑADIR AL CARRITO</button>
-
                 </a>
 
-
-
                 <a href="producto.html" class="tarjeta-producto">
-
                     <img src="img/productos/corporal/CremaCorporal.png" alt="Crema hidratante corporal">
-
                     <h4>Crema Hidratante corporal</h4>
-
                     <div class="valoracion">★★★★☆</div>
-
                     <p class="precio">22,95 €</p>
-
                     <button class="boton">AÑADIR AL CARRITO</button>
-
                 </a>
 
-
-
                 <a href="producto.html" class="tarjeta-producto">
-
                     <img src="img/productos/capilar/ProtectorTermico.png" alt="Protector térmico pelo">
-
                     <h4>Protector térmico pelo</h4>
-
                     <div class="valoracion">★★★★☆</div>
-
                     <p class="precio">19,95 €</p>
-
                     <button class="boton">AÑADIR AL CARRITO</button>
-
                 </a>
-
-
 
                 <a href="producto.html" class="tarjeta-producto">
-
                     <img src="img/productos/capilar/ChampuAnticaida.png" alt="Champú anticaída">
-
                     <h4>Champú anticaída</h4>
-
                     <div class="valoracion">★★★★☆</div>
-
                     <p class="precio">19,95 €</p>
-
                     <button class="boton">AÑADIR AL CARRITO</button>
-
                 </a>
-
             </div>
-
         </section>
-
-
 
         <!-- Banner video -->
-
         <section class="seccion-banner">
-
             <div class="banner-ancho">
-
                 <video autoplay muted loop playsinline>
-
                     <source src="media/video.mp4" type="video/mp4">
-
                     Tu navegador no soporta el video.
-
                 </video>
-
             </div>
-
         </section>
-
-
 
         <!-- Slider -->
-
         <div class="slider-deslizante">
-
             <div class="slide">
-
                 <img src="img/banner/banner1.png" alt="">
-
                 <div class="texto-slide">Ingredientes naturales</div>
-
             </div>
 
-
-
             <div class="slide">
-
                 <img src="img/banner/banner2.png" alt="">
-
                 <div class="texto-slide">Cosmética premium</div>
-
             </div>
-
-
 
             <div class="slide">
-
                 <img src="img/banner/banner5.png" alt="">
-
                 <div class="texto-slide">Cuidado para tu piel</div>
-
             </div>
-
         </div>
-
-
 
         <!-- Tarjetas beneficios -->
-
         <section class="seccion-beneficios">
-
             <div class="rejilla-beneficios">
-
-
-
                 <div class="tarjeta-beneficio beige">
-
                     <h3>Restringimos más de mil ingredientes</h3>
-
                     <p>
-
                         Cosmética natural sin efectos adversos. Solo incluimos los nutrientes que aportan un valor real
-                        a la salud
-
-                        de la piel y el pelo.
-
+                        a la salud de la piel y el pelo.
                     </p>
-
                     <p class="tachado">
-
                         Aluminio, Flúor, Siliconas, Plomo, Oxibenzona, Parabenos
-
                     </p>
-
                 </div>
-
-
 
                 <div class="tarjeta-beneficio fondo2">
-
                     <h3>Fórmulas clínicamente testadas</h3>
-
                     <p>
-
                         por dermatólogos independientes para solucionar problemas cutáneos sin efectos adversos. Aptas
                         para ti,
-
                         incluso si tienes la piel sensible.
-
                     </p>
-
                 </div>
-
-
 
                 <div class="tarjeta-beneficio fondo3">
-
                     <h3>Ingredientes +99% naturales y biocompatibles</h3>
-
                     <p>
-
                         que la piel reconoce al instante e integra con facilidad, sin alterar la barrera cutánea y sin
                         provocar
-
                         reacción.
-
                     </p>
-
                 </div>
-
-
-
             </div>
-
         </section>
-
-
 
         <!-- Banner mensaje -->
-
         <section class="seccion-mensaje">
-
             <div class="mensaje-intro">
-
                 <h1>La alternativa 100% vegana con envases de vidrio y cartón</h1>
-
                 <p>
-
                     La industria cosmética todavía emplea ingredientes de origen animal y desecha billones de envases de
                     plástico
-
                     cada año,
-
                     <strong>pero existe una alternativa.</strong>
-
                 </p>
-
             </div>
-
         </section>
-
-
 
         <!-- Banner info -->
-
         <section class="seccion-garantias">
-
             <div class="lista-garantias">
-
                 <div class="garantia"><img src="img/info/transporte.png" alt=""><span>Envíos en 24/48 horas</span></div>
-
                 <div class="garantia"><img src="img/info/gift.png" alt=""><span>Regalo seguro con tu pedido</span></div>
-
                 <div class="garantia"><img src="img/info/pay.png" alt=""><span>Pagos 100% seguros</span></div>
-
                 <div class="garantia"><img src="img/info/returned.png" alt=""><span>Devoluciones gratuitas</span></div>
-
                 <div class="garantia"><img src="img/info/customer.png" alt=""><span>Atención al Cliente</span></div>
-
             </div>
-
         </section>
-
     </main>
 
-
-
     <!-- Footer -->
-
     <footer>
-
         <div class="footer-contenedor">
-
             <div class="footer-logo">
-
                 <img src="img/logo/logo_negativo.png" alt="Velux Cosmetics">
-
             </div>
-
-
 
             <div class="footer-newsletter">
-
                 <h3>¡Suscríbete y consigue tu 20%!</h3>
-
                 <p>Vas a recibir novedades, descuentos y consejos de utilidad para cuidar tu piel y tu cabello con mucho
                     amor
-
                 </p>
-
                 <div class="input-email">
-
                     <input type="email" placeholder="Correo electrónico">
-
                     <button>
-
                         <img src="img/nav/arrow.png" alt="Enviar">
-
                     </button>
-
                 </div>
-
             </div>
-
-
 
             <div class="footer-legal">
-
                 <h4>Legal</h4>
-
                 <ul>
-
                     <li><a href="#">Aviso Legal</a></li>
-
                     <li><a href="#">Política de Privacidad</a></li>
-
                     <li><a href="#">Política de Devoluciones</a></li>
-
                     <li><a href="#">Política de Cookies</a></li>
-
                 </ul>
-
             </div>
-
-
 
             <div class="footer-contacto">
-
                 <h4>Contacto</h4>
-
                 <p><img src="img/nav/phone.png" class="icon"> 684-029-127</p>
-
                 <p><img src="img/nav/mail.png" class="icon"> info@veluxcosmetics.com</p>
-
             </div>
-
         </div>
 
-
-
         <div class="footer-bottom">
-
             <div class="footer-redes">
-
                 <img src="img/redes/instagram.png" alt="Instagram" class="icon">
-
                 <img src="img/redes/facebook.png" alt="Facebook" class="icon">
-
                 <img src="img/redes/tiktok.png" alt="TikTok" class="icon">
-
                 <img src="img/redes/whatsapp.png" alt="WhatsApp" class="icon">
-
             </div>
 
-
-
             <div class="footer-copy">
-
                 <p>© 2025 Velux Cosmetics. Todos los derechos reservados.</p>
-
-
-
                 <p class="licencia">
-
                     Esta obra está bajo una
-
                     <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">
-
                         Licencia Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional
-
                     </a>
 
                     <span class="cc-icons">
-
                         <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" class="cc-icon">
-
                         <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" class="cc-icon">
-
                         <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC" class="cc-icon">
-
                         <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="ND" class="cc-icon">
-
                     </span>
-
                 </p>
-
             </div>
-
         </div>
-
     </footer>
-
-
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-
-
     <script src="./js/menu.js"></script>
 
-
-
-
-
 </body>
-
-
-
 </html>

@@ -13652,6 +13652,13 @@ footer {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
+.contenedor-login .form-control {
+  color: #000 !important;
+  background-color: #fff;
+}
+.contenedor-login .form-label {
+  color: #000 !important;
+}
 
 .contenedor-login .logo {
   display: block;
@@ -13701,6 +13708,190 @@ footer {
 }
 #promoCarousel .rejilla-productos {
   padding: 0 4rem;
+}
+
+.seccion-promocion {
+  background-color: #FEF7DF;
+  padding: 1rem 0.8rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+.seccion-promocion h2 {
+  color: #1E1E1E;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+}
+.seccion-promocion p {
+  font-size: 0.85rem;
+  color: #4a4a4a;
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+}
+.seccion-promocion .btn-secondary {
+  background-color: #1E1E1E;
+  color: #fff;
+  padding: 0.45rem 1.2rem;
+  font-size: 0.8rem;
+  border-radius: 25px;
+  transition: all 0.25s;
+}
+.seccion-promocion .btn-secondary:hover {
+  background-color: rgb(60.6, 60.6, 60.6);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.promo-hero {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  background-color: #F5F5F5;
+  border-left: 5px solid #1E1E1E;
+  border-radius: 0.4rem;
+  text-align: left;
+  color: #1E1E1E;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+.promo-hero h1 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #1E1E1E;
+}
+.promo-hero p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  color: #333333;
+}
+.promo-hero p strong {
+  color: #1E1E1E;
+}
+.promo-hero hr {
+  width: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0.6rem 0;
+}
+.promo-hero h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0.4rem 0 1rem 0;
+  color: #1E1E1E;
+}
+.promo-hero button.btn-secondary {
+  font-size: 0.85rem;
+  padding: 0.45rem 1.3rem;
+  border-radius: 25px;
+  background-color: #1E1E1E;
+  color: #ffffff;
+  border: none;
+  transition: all 0.25s ease;
+}
+.promo-hero button.btn-secondary:hover {
+  background-color: #333333;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-pago {
+  max-width: 480px;
+  margin: -4rem auto;
+  padding: 2rem 1.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.contenedor-pago .logo {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+.contenedor-pago h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #1E1E1E;
+}
+.contenedor-pago p {
+  font-size: 0.95rem;
+  color: #4a4a4a;
+  margin-bottom: 1rem;
+}
+.contenedor-pago .list-group-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+.contenedor-pago .list-group-item.total {
+  font-weight: 700;
+  background-color: #e0e0e0;
+}
+.contenedor-pago .list-group-item .producto-img {
+  max-width: 50px;
+  margin-right: 0.5rem;
+}
+.contenedor-pago .list-group-item span {
+  flex: 1;
+  margin-left: 0.5rem;
+  text-align: left;
+  color: #1E1E1E;
+}
+.contenedor-pago .list-group-item strong {
+  color: #1E1E1E;
+}
+.contenedor-pago .cupon {
+  display: flex;
+  margin: 1rem 0;
+}
+.contenedor-pago .cupon input.form-control {
+  flex: 1;
+  padding: 0.4rem;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #ccc;
+}
+.contenedor-pago .cupon button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  background-color: #1E1E1E;
+  color: #fff;
+}
+.contenedor-pago .cupon button:hover {
+  background-color: rgb(60.6, 60.6, 60.6);
+}
+.contenedor-pago .metodos-pago {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: #4a4a4a;
+}
+.contenedor-pago .metodos-pago .logos-pago {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.contenedor-pago .metodos-pago .logos-pago img {
+  max-height: 30px;
+}
+.contenedor-pago .btn-pagar {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 25px;
+  background-color: #1E1E1E;
+  color: #fff;
+  font-size: 1rem;
+}
+.contenedor-pago .btn-pagar:hover {
+  background-color: rgb(60.6, 60.6, 60.6);
+}
+.contenedor-pago .footer {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #4a4a4a;
 }
 
 /*# sourceMappingURL=main.css.map */

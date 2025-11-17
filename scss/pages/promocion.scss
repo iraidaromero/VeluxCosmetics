@@ -9,3 +9,99 @@
     padding: 0 4rem; 
   }
 }
+
+.seccion-promocion {
+  background-color: #FEF7DF;
+  padding: 1rem 0.8rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+
+  h2 {
+    color: #1E1E1E;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+    color: #4a4a4a;
+    margin-bottom: 0.8rem;
+    font-weight: 400;
+  }
+
+  .btn-secondary {
+    background-color: #1E1E1E;
+    color: #fff;
+    padding: 0.45rem 1.2rem;
+    font-size: 0.8rem;
+    border-radius: 25px;
+    transition: all 0.25s;
+
+    &:hover {
+      background-color: lighten(#1E1E1E, 12%);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+  }
+}
+
+.promo-hero {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  background-color: #F5F5F5; 
+  border-left: 5px solid #1E1E1E; 
+  border-radius: 0.4rem;
+  text-align: left;
+  color: #1E1E1E;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+
+  h1 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #1E1E1E;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    color: #333333;
+
+    strong {
+      color: #1E1E1E;
+    }
+  }
+
+  hr {
+    width: 40px;
+    border: 1px solid rgba(0,0,0,0.1);
+    margin: 0.6rem 0;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0.4rem 0 1rem 0;
+    color: #1E1E1E;
+  }
+
+  button.btn-secondary {
+    font-size: 0.85rem;
+    padding: 0.45rem 1.3rem;
+    border-radius: 25px;
+    background-color: #1E1E1E;
+    color: #ffffff;
+    border: none;
+    transition: all 0.25s ease;
+
+    &:hover {
+      background-color: #333333;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+  }
+}
