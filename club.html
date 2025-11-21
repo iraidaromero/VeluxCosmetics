@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velux Club | Velux Cosmetics</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" type="image/x-icon" href="img/logo/favicon1.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-white">
+
+    <div class="chat-atencion">
+        <img src="img/nav/message.png" alt="Atención al cliente">
+    </div>
+
+    <div class="banner">
+        <p>ENVÍO GRATIS | ENTREGA 24/48H</p>
+    </div>
+
+    <header>
+        <div class="menu-buscador">
+            <img src="img/nav/nav.png" alt="Menú" class="icono-menu" id="abrir-menu">
+            <div class="buscador">
+                <img src="img/nav/search.png" alt="Buscar" class="icon">
+                <input type="text" placeholder="Buscar en Velux Cosmetics">
+            </div>
+        </div>
+
+        <audio id="sonidoMenu" src="media/audio.mp3"></audio>
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo/logo.png" alt="Velux Cosmetics">
+            </a>
+        </div>
+
+        <div class="iconos">
+            <a href="login.html">
+                <img src="img/nav/user.png" alt="Usuario" class="icon">
+            </a>
+
+            <img src="img/nav/heart.png" alt="Favoritos" class="icon">
+
+            <a href="pago.html">
+                <img src="img/nav/cart.png" alt="Carrito" class="icon">
+            </a>
+        </div>
+    </header>
+
+    <nav class="menu-lateral" id="menu-lateral">
+        <div class="cabecera-menu">
+            <img src="img/logo/logo.png" alt="Velux Cosmetics" class="logo-menu">
+            <button id="cerrar-menu">✕</button>
+        </div>
+
+        <ul class="lista-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="todosProductos.html">Todos los productos</a></li>
+            <li class="item-categorias">
+                <div class="titulo-categoria">
+                    <span><a href="categorias.html">Categorías</a></span>
+                    <button class="boton-submenu">+</button>
+                </div>
+                <ul class="submenu">
+                    <li><a href="categorias.html">Ver todo</a></li>
+                    <li><a href="categorias.html#facial">Facial</a></li>
+                    <li><a href="categorias.html#corporal">Corporal</a></li>
+                    <li><a href="categorias.html#capilar">Capilar</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
+        </ul>
+    </nav>
+
+    <div class="fondo-oscuro" id="fondo-oscuro"></div>
+
+  <main>
+    
+    <section class="text-center container pt-4 pb-3">
+      <span class="badge bg-white text-dark border mb-2 rounded-pill px-2 py-1 small" style="font-size: 0.7rem;">PROGRAMA DE PUNTOS</span>
+      <h2 class="fw-bold mb-2 text-black" style="font-family: 'Roboto', serif;">Velux Club</h2>
+      <p class="small text-muted col-md-8 mx-auto mb-3">
+        Únete a nuestra comunidad. Acumula "Semillas" con cada compra y desbloquea recompensas.
+      </p>
+      <div class="mb-4">
+        <a href="login.html" class="btn btn-dark btn-sm rounded-pill px-4">Unirme Gratis</a>
+      </div>
+    </section>
+
+    <section class="container pb-5 mb-2">
+      <div class="row justify-content-center">
+        <div class="col-lg-7"> 
+          
+          <ul class="nav nav-pills mb-3 justify-content-center gap-2" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active rounded-pill px-3 py-1 small" id="pills-niveles-tab" data-bs-toggle="pill" data-bs-target="#pills-niveles" type="button" role="tab">Niveles</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link rounded-pill px-3 py-1 small" id="pills-ganar-tab" data-bs-toggle="pill" data-bs-target="#pills-ganar" type="button" role="tab">Ganar puntos</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link rounded-pill px-3 py-1 small" id="pills-premios-tab" data-bs-toggle="pill" data-bs-target="#pills-premios" type="button" role="tab">Premios</button>
+            </li>
+          </ul>
+
+          <div class="tab-content p-4 border rounded-4 shadow-sm bg-light" id="pills-tabContent">
+            
+            <div class="tab-pane fade show active" id="pills-niveles" role="tabpanel">
+              <h5 class="fw-bold mb-3 text-center text-black">Tu crecimiento</h5>
+              <div class="list-group list-group-flush">
+                
+                <div class="list-group-item py-3 d-flex align-items-center border-0 bg-light">
+                  <img src="img/club/semilla.png" alt="Icono Semilla" class="icono-nivel me-5"> 
+                  <div>
+                    <h6 class="fw-bold mb-0 text-black">Nivel Semilla (0-100)</h6>
+                    <p class="mb-0 text-muted small">1 punto/€. Regalo cumple.</p>
+                  </div>
+                </div>
+
+                <div class="list-group-item py-3 d-flex align-items-center rounded my-1 border-0 bg-light">
+                  <img src="img/club/brote.png" alt="Icono Brote" class="icono-nivel me-5">
+                  <div>
+                    <h6 class="fw-bold mb-0 text-black">Nivel Brote (101-300)</h6>
+                    <p class="mb-0 text-muted small">1.5 puntos/€. Envíos gratis.</p>
+                  </div>
+                </div>
+
+                <div class="list-group-item py-3 d-flex align-items-center border-0 bg-light">
+                  <img src="img/club/flor.png" alt="Icono Flor" class="icono-nivel me-5">
+                  <div>
+                    <h6 class="fw-bold mb-0 text-black">Nivel Flor (+300)</h6>
+                    <p class="mb-0 text-muted small">2 puntos/€. Eventos VIP.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-ganar" role="tabpanel">
+              <h5 class="fw-bold mb-3 text-center text-black">Suma rápido</h5>
+              <table class="table table-sm align-middle mb-0">
+                <tbody>
+                  <tr>
+                    <td class="py-2 small border-0 bg-light">
+                      <img src="img/club/comprar.png" alt="Compra" class="icono-tabla me-4"> Por cada compra
+                    </td>
+                    <td class="text-end fw-bold text-muted small border-0 bg-light">1€ = 1 Semilla</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 small border-0 bg-light">
+                      <img src="img/club/instagram.png" alt="Instagram" class="icono-tabla me-4"> Por compartir publicaciones en Instagram
+                    </td>
+                    <td class="text-end fw-bold text-success small border-0 bg-light">+10 Semillas</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 small border-0 bg-light">
+                      <img src="img/club/resena.png" alt="Reseña" class="icono-tabla me-4"> Por cada reseña
+                    </td>
+                    <td class="text-end fw-bold text-success small border-0 bg-light">+50 Semillas</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 small border-0 bg-light">
+                      <img src="img/club/user.png" alt="Amiga" class="icono-tabla me-4"> Por invitar a una amiga
+                    </td>
+                    <td class="text-end fw-bold text-success small border-0 bg-light">+100 Semillas</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="tab-pane fade text-center" id="pills-premios" role="tabpanel">
+              <h5 class="fw-bold mb-2 text-black">Canjea puntos</h5>
+              <p class="text-muted small mb-4">Úsalos en el carrito.</p>
+              
+              <div class="row g-2 justify-content-center">
+                <div class="col-5">
+                  <div class="p-3 border rounded bg-light d-flex flex-column align-items-center">
+                    <img src="img/club/cupon.png" alt="Cupón" class="icono-premio mb-2">
+                    <h6 class="fw-bold text-success mb-0 small">5€ Dto.</h6>
+                    <small class="text-muted" style="font-size: 0.7rem;">100 Puntos</small>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <div class="p-3 border rounded bg-light d-flex flex-column align-items-center">
+                    <img src="img/club/cupon.png" alt="Cupón" class="icono-premio mb-2">
+                    <h6 class="fw-bold text-success mb-0 small">10€ Dto.</h6>
+                    <small class="text-muted" style="font-size: 0.7rem;">200 Puntos</small>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mt-4">
+                <a href="todosProductos.html" class="btn btn-outline-dark btn-sm rounded-pill px-4">Ir a tienda</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+        <div class="footer-contenedor">
+            <div class="footer-logo">
+                <img src="img/logo/logo_negativo.png" alt="Velux Cosmetics">
+            </div>
+            <div class="footer-newsletter">
+                <h3>¡Suscríbete y consigue tu 20%!</h3>
+                <p>Vas a recibir novedades, descuentos y consejos de utilidad para cuidar tu piel y tu cabello con mucho amor</p>
+                <div class="input-email">
+                    <input type="email" placeholder="Correo electrónico">
+                    <button><img src="img/nav/arrow.png" alt="Enviar"></button>
+                </div>
+            </div>
+            <div class="footer-legal">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Devoluciones</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-contacto">
+                <h4>Contacto</h4>
+                <p><img src="img/nav/phone.png" class="icon"> 684-029-127</p>
+                <p><img src="img/nav/mail.png" class="icon"> info@veluxcosmetics.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-redes">
+                <img src="img/redes/instagram.png" alt="Instagram" class="icon">
+                <img src="img/redes/facebook.png" alt="Facebook" class="icon">
+                <img src="img/redes/tiktok.png" alt="TikTok" class="icon">
+                <img src="img/redes/whatsapp.png" alt="WhatsApp" class="icon">
+            </div>
+            <div class="footer-copy">
+                <p>© 2025 Velux Cosmetics. Todos los derechos reservados.</p>
+                <p class="licencia">Esta obra está bajo una <a href="#">Licencia Creative Commons</a>...</p>
+            </div>
+        </div>
+    </footer>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/menu.js"></script>
+</body>
+</html>

@@ -4,21 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Velux Cosmetics | Cosmética Natural y Vegana</title>
-    <!-- <link rel="stylesheet" href="css/global.css">
-<link rel="stylesheet" href="css/index.css">
-<link rel="stylesheet" href="css/colores.css"> -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/x-icon" href="img/logo/favicon1.ico">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Atención boton fijo -->
     <div class="chat-atencion">
         <img src="img/nav/message.png" alt="Atención al cliente">
     </div>
 
-    <!-- Cabecera -->
     <div class="banner">
         <p>ENVÍO GRATIS | ENTREGA 24/48H</p>
     </div>
@@ -35,7 +30,9 @@
         <audio id="sonidoMenu" src="media/audio.mp3"></audio>
 
         <div class="logo">
-            <img src="img/logo/logo.png" alt="Velux Cosmetics">
+            <a href="index.html">
+                <img src="img/logo/logo.png" alt="Velux Cosmetics">
+            </a>
         </div>
 
         <div class="iconos">
@@ -51,7 +48,6 @@
         </div>
     </header>
 
-    <!-- Menú de navegación -->
     <nav class="menu-lateral" id="menu-lateral">
         <div class="cabecera-menu">
             <img src="img/logo/logo.png" alt="Velux Cosmetics" class="logo-menu">
@@ -81,7 +77,6 @@
     <div class="fondo-oscuro" id="fondo-oscuro"></div>
 
     <main>
-        <!-- Banner principal -->
         <section class="seccion-banner">
             <div class="banner-ancho">
                 <img src="img/banner/banner1.png" alt="Ambiente natural Velux">
@@ -97,15 +92,14 @@
                             Tenemos un regalo especial para ti. Descubre tu descuento de bienvenida
                             y empieza a cuidarte con Velux Cosmetics.
                         </p>
-                        <a href="promocion.html" class="btn btn-secondary btn-lg">
+                        <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#modalPromoInfo">
                             Ver Promoción
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Productos -->
         <section class="seccion-productos">
             <div class="rejilla-productos">
                 <a href="producto.html" class="tarjeta-producto">
@@ -141,8 +135,44 @@
                 </a>
             </div>
         </section>
+        <section class="container-fluid p-0 my-5">
+            <div class="row g-0">
+                
+                <div class="col-md-6 text-center py-4 px-3 d-flex flex-column justify-content-center align-items-center" 
+                    style="min-height: 250px; background-color: #DDF1D2;">
+                
+                <span class="text-black mb-2" style="font-size: 0.75rem; letter-spacing: 1px;">SUSCRIPCIÓN MENSUAL</span>
+                
+                <h4 class="fw-bold mb-2 text-black" style="font-family: 'Roboto', serif;">Velux Box</h4>
+                
+                <p class="small text-black mb-3 col-lg-8">
+                    Tu sorpresa mensual de cosmética natural en casa.
+                </p>
+                
+                <a href="suscripcion.html" class="btn btn-dark btn-sm rounded-pill px-4">
+                    Ver Planes
+                </a>
+                </div>
 
-        <!-- Banner video -->
+                <div class="col-md-6 bg-white text-center py-4 px-3 d-flex flex-column justify-content-center align-items-center" 
+                    style="min-height: 250px; border: 1px solid #DDF1D2;">
+                
+                <span class="text-muted mb-2" style="font-size: 0.75rem; letter-spacing: 1px;">PROGRAMA DE PUNTOS</span>
+
+                <h4 class="fw-bold mb-2 text-dark">Velux Club</h4>
+
+                <p class="small text-muted mb-3 col-lg-8">
+                    Acumula puntos con cada compra y canjéalos por productos gratis.
+                </p>
+
+                <a href="club.html" class="btn btn-secondary btn-sm rounded-pill px-4">
+                    Ver Ventajas
+                </a>
+                </div>
+
+            </div>
+        </section>
+
         <section class="seccion-banner">
             <div class="banner-ancho">
                 <video autoplay muted loop playsinline>
@@ -152,7 +182,6 @@
             </div>
         </section>
 
-        <!-- Slider -->
         <div class="slider-deslizante">
             <div class="slide">
                 <img src="img/banner/banner1.png" alt="">
@@ -170,7 +199,6 @@
             </div>
         </div>
 
-        <!-- Tarjetas beneficios -->
         <section class="seccion-beneficios">
             <div class="rejilla-beneficios">
                 <div class="tarjeta-beneficio beige">
@@ -204,7 +232,6 @@
             </div>
         </section>
 
-        <!-- Banner mensaje -->
         <section class="seccion-mensaje">
             <div class="mensaje-intro">
                 <h1>La alternativa 100% vegana con envases de vidrio y cartón</h1>
@@ -217,7 +244,6 @@
             </div>
         </section>
 
-        <!-- Banner info -->
         <section class="seccion-garantias">
             <div class="lista-garantias">
                 <div class="garantia"><img src="img/info/transporte.png" alt=""><span>Envíos en 24/48 horas</span></div>
@@ -229,7 +255,6 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-contenedor">
             <div class="footer-logo">
@@ -292,6 +317,124 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal fade" id="modalPromoInfo" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0 pb-0">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center p-4 pt-0">
+            
+            <h3 class="fw-bold mb-3">¡Tu Primera Compra!</h3>
+            
+            <p class="mb-4">
+                Nos encanta verte aquí. Disfruta de un 
+                <strong>20% de descuento</strong> de bienvenida.
+            </p>
+            
+            <hr class="my-3">
+            
+            <p class="small text-muted mb-1">Código promocional:</p>
+            
+            <h2 class="text-secondary fw-bold mb-4">BIENVENIDA20</h2>
+            
+            <button class="btn btn-secondary w-100" data-bs-target="#promoProductModal" data-bs-toggle="modal">
+                Empezar a comprar
+            </button>
+
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="promoProductModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+            <h6 class="modal-title fw-bold">Añade tus favoritos</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body pt-0">
+            
+            <div id="promoCarousel" class="carousel" data-bs-ride="false">
+                <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="rejilla-productos">
+                    <a href="producto.html" class="tarjeta-producto p-3"> <img src="img/productos/facial/SerumVitaminaC.png" alt="Sérum" class="mb-2">
+                        <h4 class="fs-6">Sérum Vit. C</h4>
+                        <p class="precio fs-6 mb-2">35,95 €</p>
+                        <button class="boton py-1" style="font-size: 12px;">AÑADIR</button>
+                    </a>
+                    <a href="producto.html" class="tarjeta-producto p-3">
+                        <img src="img/productos/corporal/CremaCorporal.png" alt="Crema" class="mb-2">
+                        <h4 class="fs-6">Crema Corp.</h4>
+                        <p class="precio fs-6 mb-2">22,95 €</p>
+                        <button class="boton py-1" style="font-size: 12px;">AÑADIR</button>
+                    </a>
+                    <a href="producto.html" class="tarjeta-producto p-3">
+                        <img src="img/productos/capilar/ProtectorTermico.png" alt="Protector" class="mb-2">
+                        <h4 class="fs-6">Protector</h4>
+                        <p class="precio fs-6 mb-2">19,95 €</p>
+                        <button class="boton py-1" style="font-size: 12px;">AÑADIR</button>
+                    </a>
+                    <a href="producto.html" class="tarjeta-producto p-3">
+                        <img src="img/productos/capilar/ChampuAnticaida.png" alt="Champú" class="mb-2">
+                        <h4 class="fs-6">Champú</h4>
+                        <p class="precio fs-6 mb-2">19,95 €</p>
+                        <button class="boton py-1" style="font-size: 12px;">AÑADIR</button>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="rejilla-productos">
+                    <a href="producto.html" class="tarjeta-producto p-3">
+                        <img src="img/productos/capilar/ChampuAnticaida.png" alt="Champú" class="mb-2">
+                        <h4 class="fs-6">Champú</h4>
+                        <p class="precio fs-6 mb-2">19,95 €</p>
+                        <button class="boton py-1" style="font-size: 12px;">AÑADIR</button>
+                    </a>
+                    <a href="producto.html" class="tarjeta-producto p-3">
+                        <img src="img/productos/capilar/ProtectorTermico.png" alt="Protector" class="mb-2">
+                        <h4 class="fs-6">Protector</h4>
+                        <p class="precio fs-6 mb-2">19,95 €</p>
+                        <button class="boton py-1" style="font-size: 12px;">AÑADIR</button>
+                    </a>
+                    <a href="producto.html" class="tarjeta-producto p-3">
+                        <img src="img/productos/corporal/CremaCorporal.png" alt="Crema" class="mb-2">
+                        <h4 class="fs-6">Crema Corp.</h4>
+                        <p class="precio fs-6 mb-2">22,95 €</p>
+                        <button class="boton py-1" style="font-size: 12px;">AÑADIR</button>
+                    </a>
+                    <a href="producto.html" class="tarjeta-producto p-3">
+                        <img src="img/productos/facial/SerumVitaminaC.png" alt="Sérum" class="mb-2">
+                        <h4 class="fs-6">Sérum Vit. C</h4>
+                        <p class="precio fs-6 mb-2">35,95 €</p>
+                        <button class="boton py-1" style="font-size: 12px;">AÑADIR</button>
+                    </a>
+                    </div>
+                </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+            </div>
+            <div class="modal-footer border-0 pt-0">
+            <button class="btn btn-sm btn-outline-secondary me-auto" data-bs-target="#modalPromoInfo" data-bs-toggle="modal">Volver</button>
+            <a href="todosProductos.html" class="btn btn-sm btn-secondary">Ver todo</a>
+            </div>
+        </div>
+        </div>
+    </div>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 

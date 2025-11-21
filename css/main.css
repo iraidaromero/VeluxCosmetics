@@ -13894,4 +13894,72 @@ footer {
   color: #4a4a4a;
 }
 
+.lista-caracteristicas li {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+.lista-caracteristicas li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.card-velux-gradient {
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  background-image: linear-gradient(white, white), linear-gradient(135deg, #DDF1D2 0%, #a8bfa0 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-pills .nav-link {
+  color: #666;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+.nav-pills .nav-link:hover {
+  color: black;
+  background-color: #f9f9f9;
+}
+.nav-pills .nav-link.active {
+  background-color: #DDF1D2 !important;
+  color: black !important;
+}
+
+.text-success {
+  color: #2c5f2d !important;
+}
+
+.icono-nivel {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  margin-right: 15px;
+}
+
+.icono-tabla {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.icono-premio {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin-bottom: 8px;
+  display: block;
+}
+
 /*# sourceMappingURL=main.css.map */

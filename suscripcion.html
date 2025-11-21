@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velux Box | Velux Cosmetics</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" type="image/x-icon" href="img/logo/favicon1.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-white">
+
+  <div class="chat-atencion">
+        <img src="img/nav/message.png" alt="Atención al cliente">
+    </div>
+
+    <div class="banner">
+        <p>ENVÍO GRATIS | ENTREGA 24/48H</p>
+    </div>
+
+    <header>
+        <div class="menu-buscador">
+            <img src="img/nav/nav.png" alt="Menú" class="icono-menu" id="abrir-menu">
+            <div class="buscador">
+                <img src="img/nav/search.png" alt="Buscar" class="icon">
+                <input type="text" placeholder="Buscar en Velux Cosmetics">
+            </div>
+        </div>
+
+        <audio id="sonidoMenu" src="media/audio.mp3"></audio>
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo/logo.png" alt="Velux Cosmetics">
+            </a>
+        </div>
+
+        <div class="iconos">
+            <a href="login.html">
+                <img src="img/nav/user.png" alt="Usuario" class="icon">
+            </a>
+
+            <img src="img/nav/heart.png" alt="Favoritos" class="icon">
+
+            <a href="pago.html">
+                <img src="img/nav/cart.png" alt="Carrito" class="icon">
+            </a>
+        </div>
+    </header>
+
+    <nav class="menu-lateral" id="menu-lateral">
+        <div class="cabecera-menu">
+            <img src="img/logo/logo.png" alt="Velux Cosmetics" class="logo-menu">
+            <button id="cerrar-menu">✕</button>
+        </div>
+
+        <ul class="lista-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="todosProductos.html">Todos los productos</a></li>
+            <li class="item-categorias">
+                <div class="titulo-categoria">
+                    <span><a href="categorias.html">Categorías</a></span>
+                    <button class="boton-submenu">+</button>
+                </div>
+                <ul class="submenu">
+                    <li><a href="categorias.html">Ver todo</a></li>
+                    <li><a href="categorias.html#facial">Facial</a></li>
+                    <li><a href="categorias.html#corporal">Corporal</a></li>
+                    <li><a href="categorias.html#capilar">Capilar</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
+        </ul>
+    </nav>
+
+    <div class="fondo-oscuro" id="fondo-oscuro"></div>
+  
+  <main>
+    
+    <section class="text-center container pt-1 pb-2 mb-4">
+      <h1 class="text-black h2 fw-bold mb-2" style="font-family: 'Roboto', serif;">Descubre Velux Box</h1>
+      <p class="small text-muted col-md-8 mx-auto mb-0">
+        Recibe cada mes una selección sorpresa de nuestra mejor cosmética natural.
+      </p>
+    </section>
+
+    <section class="container pb-4">
+      <div class="row g-3 justify-content-center"> 
+        
+        <div class="col-12 col-lg-4 d-flex">
+          <div class="card w-100 card-velux-gradient">
+            <div class="card-body p-3 d-flex flex-column">
+              <h5 class="fw-bold">Essential</h5>
+              <p class="text-muted small mb-2">Para empezar.</p>
+              <div class="h2 fw-bold mb-2">15,95 <span class="fs-6 fw-normal text-muted">€/mes</span></div>
+              
+              <a href="#" class="btn btn-outline-secondary btn-sm w-100 mb-3">Suscribirme</a>
+              
+              <ul class="list-unstyled lista-caracteristicas mt-auto mb-0 text-muted small" style="font-size: 0.85rem;">
+                <li>3 mini tallas sorpresa.</li>
+                <li>Envío gratuito.</li>
+                <li>Acceso anticipado.</li>
+                <li>Cancelación flexible.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 d-flex">
+          <div class="card w-100 card-velux-gradient position-relative" style="transform: scale(1.03); z-index: 10;">
+            
+            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-primary px-2 py-1 border border-white small" style="font-size: 0.7rem;">
+              MÁS POPULAR
+            </span>
+            
+            <div class="card-body p-4 d-flex flex-column bg-white rounded">
+              <h5 class="fw-bold text-dark">Premium</h5> 
+              <p class="text-muted small mb-2">Experiencia completa.</p>
+              <div class="h2 fw-bold mb-2">24,95 <span class="fs-6 fw-normal text-muted">€/mes</span></div>
+              
+              <a href="#" class="btn btn-secondary btn-sm w-100 mb-3">Suscribirme</a>
+              
+              <ul class="list-unstyled lista-caracteristicas mt-auto mb-0" style="font-size: 0.85rem;">
+                <li class="fw-bold">Todo lo de Essential +</li>
+                <li>5 productos (2 tamaño venta).</li>
+                <li>Regalo exclusivo trimestral.</li>
+                <li>10% dto. en tienda online.</li>
+                <li>Atención prioritaria.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 d-flex">
+          <div class="card w-100 card-velux-gradient">
+            <div class="card-body p-3 d-flex flex-column">
+              <h5 class="fw-bold">Ultimate</h5>
+              <p class="text-muted small mb-2">Cuidado total.</p>
+              <div class="h2 fw-bold mb-2">39,95 <span class="fs-6 fw-normal text-muted">€/mes</span></div>
+              
+              <a href="#" class="btn btn-outline-secondary btn-sm w-100 mb-3">Suscribirme</a>
+              
+              <ul class="list-unstyled lista-caracteristicas mt-auto mb-0 text-muted small" style="font-size: 0.85rem;">
+                <li class="fw-bold">Todo lo de Premium +</li>
+                <li>Rutina facial completa.</li>
+                <li>Videollamada con experta.</li>
+                <li>Muestras deluxe ilimitadas.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+        <div class="footer-contenedor">
+            <div class="footer-logo">
+                <img src="img/logo/logo_negativo.png" alt="Velux Cosmetics">
+            </div>
+
+            <div class="footer-newsletter">
+                <h3>¡Suscríbete y consigue tu 20%!</h3>
+                <p>Vas a recibir novedades...</p>
+                <div class="input-email">
+                    <input type="email" placeholder="Correo electrónico">
+                    <button>
+                        <img src="img/nav/arrow.png" alt="Enviar">
+                    </button>
+                </div>
+            </div>
+
+            <div class="footer-legal">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Devoluciones</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contacto">
+                <h4>Contacto</h4>
+                <p><img src="img/nav/phone.png" class="icon"> 684-029-127</p>
+                <p><img src="img/nav/mail.png" class="icon"> info@veluxcosmetics.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-redes">
+                <img src="img/redes/instagram.png" alt="Instagram" class="icon">
+                <img src="img/redes/facebook.png" alt="Facebook" class="icon">
+                <img src="img/redes/tiktok.png" alt="TikTok" class="icon">
+                <img src="img/redes/whatsapp.png" alt="WhatsApp" class="icon">
+            </div>
+
+            <div class="footer-copy">
+                <p>© 2025 Velux Cosmetics. Todos los derechos reservados.</p>
+                <p class="licencia">
+                    Esta obra está bajo una
+                    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">
+                        Licencia Creative Commons
+                    </a>
+                    <span class="cc-icons">
+                        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" class="cc-icon">
+                        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" class="cc-icon">
+                        <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC" class="cc-icon">
+                        <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="ND" class="cc-icon">
+                    </span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="./js/menu.js"></script>
+
+</body>
+
+</html>

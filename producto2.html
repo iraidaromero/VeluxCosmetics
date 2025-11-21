@@ -15,114 +15,71 @@
 
 <body>
 
-  <!-- Atención boton fijo --> 
   <div class="chat-atencion">
-    <img src="img/nav/message.png" alt="Atención al cliente">
-  </div>
-  
-  <!-- Cabecera -->
-  <div class="banner text-center py-2">
-    <p class="mb-0">ENVÍO GRATIS | ENTREGA 24/48H</p>
+      <img src="img/nav/message.png" alt="Atención al cliente">
   </div>
 
-  <header class="d-flex justify-content-between align-items-center px-4 py-3">
-    <div class="d-flex align-items-center gap-3">
-      <img src="img/nav/nav.png" alt="Menú" class="icono-menu" id="abrir-menu">
-      <div class="buscador d-flex align-items-center">
-        <img src="img/nav/search.png" alt="Buscar" class="icon me-2">
-        <input type="text" placeholder="Buscar en Velux Cosmetics">
+  <div class="banner">
+      <p>ENVÍO GRATIS | ENTREGA 24/48H</p>
+  </div>
+
+  <header>
+      <div class="menu-buscador">
+          <img src="img/nav/nav.png" alt="Menú" class="icono-menu" id="abrir-menu">
+          <div class="buscador">
+              <img src="img/nav/search.png" alt="Buscar" class="icon">
+              <input type="text" placeholder="Buscar en Velux Cosmetics">
+          </div>
       </div>
-    </div>
 
-    <div class="logo text-center">
-      <img src="img/logo/logo.png" alt="Velux Cosmetics">
-    </div>
+      <audio id="sonidoMenu" src="media/audio.mp3"></audio>
 
-    <div class="iconos d-flex align-items-center gap-3">
-      <a href="login.html"><img src="img/nav/user.png" alt="Usuario" class="icon"></a>
-      <img src="img/nav/heart.png" alt="Favoritos" class="icon">
-      <img src="img/nav/cart.png" alt="Carrito" class="icon">
-    </div>
+      <div class="logo">
+          <a href="index.html">
+              <img src="img/logo/logo.png" alt="Velux Cosmetics">
+          </a>
+      </div>
+
+      <div class="iconos">
+          <a href="login.html">
+              <img src="img/nav/user.png" alt="Usuario" class="icon">
+          </a>
+
+          <img src="img/nav/heart.png" alt="Favoritos" class="icon">
+
+          <a href="pago.html">
+              <img src="img/nav/cart.png" alt="Carrito" class="icon">
+          </a>
+      </div>
   </header>
 
-  <!-- Menú de navegación -->
   <nav class="menu-lateral" id="menu-lateral">
-    <div class="cabecera-menu">
-      <img src="img/logo/logo.png" alt="Velux Cosmetics" class="logo-menu">
-      <button id="cerrar-menu">✕</button>
-    </div>
+      <div class="cabecera-menu">
+          <img src="img/logo/logo.png" alt="Velux Cosmetics" class="logo-menu">
+          <button id="cerrar-menu">✕</button>
+      </div>
 
-    <ul class="lista-menu">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="todosProductos.html">Todos los productos</a></li>
-
-      <li class="item-categorias">
-        <div class="titulo-categoria">
-          <span><a href="categorias.html">Categorías</a></span>
-          <button class="boton-submenu">+</button>
-        </div>
-        <ul class="submenu">
-          <li><a href="categorias.html">Ver todo</a></li>
-          <li><a href="categorias.html#facial">Facial</a></li>
-          <li><a href="categorias.html#corporal">Corporal</a></li>
-          <li><a href="categorias.html#capilar">Capilar</a></li>
-        </ul>
-      </li>
-
-
-      <li><a href="contacto.html">Contacto</a></li>
-      <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
-    </ul>
+      <ul class="lista-menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="todosProductos.html">Todos los productos</a></li>
+          <li class="item-categorias">
+              <div class="titulo-categoria">
+                  <span><a href="categorias.html">Categorías</a></span>
+                  <button class="boton-submenu">+</button>
+              </div>
+              <ul class="submenu">
+                  <li><a href="categorias.html">Ver todo</a></li>
+                  <li><a href="categorias.html#facial">Facial</a></li>
+                  <li><a href="categorias.html#corporal">Corporal</a></li>
+                  <li><a href="categorias.html#capilar">Capilar</a></li>
+              </ul>
+          </li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
+      </ul>
   </nav>
 
   <div class="fondo-oscuro" id="fondo-oscuro"></div>
-
-  <main class="detalle-producto container my-5">
-
-    <section class="producto-principal row justify-content-center align-items-start g-5 mb-5">
-      
-      <div class="col-lg-5 col-md-6 d-flex justify-content-center">
-        <img src="img/productos/capilar/ProtectorTermico.png" alt="Protector Térmico" class="img-fluid rounded" style="max-width: 420px; background-color: var(--color-fondo); border-radius: 20px;">
-      </div>
-
-      <div class="col-lg-5 col-md-6 info-producto">
-        <h2>Protector Térmico</h2>
-        <p class="subtitulo">Protector térmico pelo con keratina</p>
-
-        <p class="precio">19,95 €</p>
-
-        <div class="valoracion">
-          ★★★★☆ <span>(4/5)</span>
-          <a href="#">ver 1428 opiniones</a>
-        </div>
-
-        <div class="cantidad d-flex align-items-center gap-2">
-          <button>-</button>
-          <span>1</span>
-          <button>+</button>
-        </div>
-
-        <button class="boton-principal">LO QUIERO</button>
-
-        <div class="descripcion">
-          <p><strong>Fórmula 99,9% natural | Sin siliconas | Todo tipo de cabellos</strong></p>
-          <p>
-            ¿Quieres proteger tu pelo del daño térmico y desenredarlo fácilmente? Descubre los beneficios de este protector térmico 99,4% natural, con keratina vegetal y sin siliconas, para mejorar el pelo seco, encrespado y sin brillo.
-          </p>
-          <h4>Beneficios</h4>
-          <ul>
-            <li>Desenreda y facilita el peinado en un 39% en cada cepillado</li>
-            <li>Aumenta en un 44% la resistencia del cabello ante daños térmicos</li>
-            <li>Protege de la radiación solar un 62%</li>
-            <li>Incrementa un 36% el brillo y un 14% la hidratación capilar</li>
-            <li>Repara hasta en un 90% las cutículas dañadas</li>
-            <li>Repara y mejora notablemente la salud del cabello</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <div class="linea-verde my-5"></div>
 
     <!-- Productos relacionados -->
     <section class="relacionados text-center">

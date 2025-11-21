@@ -1,0 +1,31 @@
+@use "../utils/colores"; 
+
+.lista-caracteristicas {
+  li {
+    position: relative;
+    padding-left: 1.75rem; 
+    margin-bottom: 0.75rem; 
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.25rem;
+      width: 1.25rem;
+      height: 1.25rem;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.card-velux-gradient {
+  border: 2px solid transparent;
+  border-radius: 1rem; 
+  background-image: linear-gradient(white, white), linear-gradient(135deg, #DDF1D2 0%, #a8bfa0 100%); 
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
