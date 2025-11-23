@@ -8,52 +8,155 @@
   <link rel="icon" type="image/x-icon" href="img/logo/favicon1.ico">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-<body class="bg-light">
 
-  <div class="contenedor-pago">
-    <img src="img/logo/logo.png" alt="Velux Cosmetics" class="logo">
+<body class="bg-white text-dark">
 
-    <h2>Confirmación de Pago</h2>
-    <p>Ya casi has terminado. Revisa tu pedido y completa el pago de forma segura.</p>
-
-    <!-- Productos -->
-    <ul class="list-group mb-3">
-      <li class="list-group-item">
-        <img src="img/productos/facial/SerumVitaminaC.png" alt="Sérum Vitamina C" class="producto-img">
-        <span>Sérum Vitamina C 30ml</span>
-        <strong>35,95 €</strong>
-      </li>
-      <li class="list-group-item">
-        <img src="img/productos/corporal/CremaCorporal.png" alt="Crema Hidratante" class="producto-img">
-        <span>Crema Hidratante 50ml</span>
-        <strong>22,95 €</strong>
-      </li>
-      <li class="list-group-item total">
-        <span>Total</span>
-        <strong>58,90 €</strong>
-      </li>
-    </ul>
-
-    <!-- Cupón promocional -->
-    <div class="cupon">
-      <input type="text" placeholder="Código promocional" class="form-control">
-      <button class="btn btn-secondary">Aplicar cupón</button>
-    </div>
-
-    <!-- Métodos de pago -->
-    <div class="metodos-pago">
-      <p>Métodos de pago:</p>
-      <div class="logos-pago">
-        <img src="img/nav/pagos.png" alt="Visa">
+  <div class="container mt-4 mb-5">
+    <main>
+      
+      <div class="pb-4 text-center">
+        <a href="index.html">
+          <img src="img/logo/logo.png" alt="Velux Cosmetics" class="mb-3" style="max-width: 160px;">
+        </a>
+        
+        <h2 class="fw-bold text-black">Confirmación de Pago</h2>
+        <p class="lead text-muted small">Revisa tu pedido y completa los datos.</p>
       </div>
-    </div>
 
-    <button class="btn btn-primary btn-pagar">Tramitar pedido</button>
+      <div class="row g-5">
+        
+        <div class="col-md-5 col-lg-4 order-md-last">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-black">Tu carrito</span>
+            <span class="badge bg-dark rounded-pill">2</span>
+          </h4>
+          <ul class="list-group mb-3 border-0 shadow-sm">
+            <li class="list-group-item d-flex justify-content-between lh-sm border-0">
+              <div>
+                <h6 class="my-0 small">Sérum Vitamina C</h6>
+                <small class="text-muted" style="font-size: 0.8rem;">30ml</small>
+              </div>
+              <span class="text-muted">35,95 €</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm border-0">
+              <div>
+                <h6 class="my-0 small">Crema Hidratante</h6>
+                <small class="text-muted" style="font-size: 0.8rem;">50ml</small>
+              </div>
+              <span class="text-muted">22,95 €</span>
+            </li>
+            
+            <li class="list-group-item d-flex justify-content-between bg-light border-0 mt-1">
+              <span class="fw-bold text-black">Total (EUR)</span>
+              <strong class="text-black">58,90 €</strong>
+            </li>
+          </ul>
 
-    <div class="footer">
-      &copy; 2025 Velux Cosmetics
-    </div>
+          <form class="card p-2 border-0 bg-light shadow-sm">
+            <div class="input-group">
+              <input type="text" class="form-control border-0">
+              <button type="submit" class="btn btn-dark">Aplicar</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3 text-black">Dirección de Envío</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label small fw-bold">Nombre</label>
+                <input type="text" class="form-control" id="firstName" required>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label small fw-bold">Apellidos</label>
+                <input type="text" class="form-control" id="lastName" required>
+              </div>
+
+              <div class="col-12">
+                <label for="email" class="form-label small fw-bold">Email</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+
+              <div class="col-12">
+                <label for="address" class="form-label small fw-bold">Dirección</label>
+                <input type="text" class="form-control" id="address" required>
+              </div>
+
+              <div class="col-md-5">
+                <label for="country" class="form-label small fw-bold">País</label>
+                <select class="form-select" id="country" required>
+                  <option value="">Elige...</option>
+                  <option>España</option>
+                </select>
+              </div>
+
+              <div class="col-md-4">
+                <label for="state" class="form-label small fw-bold">Provincia</label>
+                <select class="form-select" id="state" required>
+                  <option value="">Elige...</option>
+                  <option>Madrid</option>
+                  <option>Barcelona</option>
+                  <option>Valencia</option>
+                </select>
+              </div>
+
+              <div class="col-md-3">
+                <label for="zip" class="form-label small fw-bold">C. Postal</label>
+                <input type="text" class="form-control" id="zip" required>
+              </div>
+            </div>
+
+            <hr class="my-4">
+
+            <h4 class="mb-3 text-black">Método de Pago</h4>
+
+            <div class="my-3">
+              <div class="form-check">
+                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                <label class="form-check-label" for="credit">Tarjeta de crédito</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="paypal">PayPal</label>
+              </div>
+            </div>
+
+            <div class="row gy-3">
+              <div class="col-md-6">
+                <label for="cc-name" class="form-label small fw-bold">Nombre en la tarjeta</label>
+                <input type="text" class="form-control" id="cc-name" required>
+                <small class="text-muted">Nombre completo como aparece en la tarjeta</small>
+              </div>
+
+              <div class="col-md-6">
+                <label for="cc-number" class="form-label small fw-bold">Número de tarjeta</label>
+                <input type="text" class="form-control" id="cc-number" required>
+              </div>
+
+              <div class="col-md-3">
+                <label for="cc-expiration" class="form-label small fw-bold">Caducidad</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="MM/AA" required>
+              </div>
+
+              <div class="col-md-3">
+                <label for="cc-cvv" class="form-label small fw-bold">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" required>
+              </div>
+            </div>
+
+            <hr class="my-4">
+
+            <button class="w-100 btn btn-dark btn-lg rounded-pill" type="submit">
+              Pagar 58,90 €
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
   </div>
 
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

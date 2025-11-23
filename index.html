@@ -455,83 +455,152 @@
     <script src="./js/menu.js"></script>
 
     <div class="modal fade" id="modalPago" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg"> <div class="modal-content">
-            
-            <div class="modal-header border-0 pb-0">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-
-            <div class="modal-body p-4 p-md-5">
+        <div class="modal-dialog modal-dialog-centered modal-xl"> 
+            <div class="modal-content">
                 
-                <div class="text-center mb-4">
-                <img src="img/logo/logo.png" alt="Velux Cosmetics" style="max-width: 120px;">
-                <h3 class="fw-bold mt-3">Confirmación de Pago</h3>
-                <p class="text-muted small">Revisa tu pedido y completa el pago de forma segura.</p>
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
-                <div class="row g-4">
-                <div class="col-md-6">
-                    <h5 class="mb-3">Tu Carrito</h5>
-                    <ul class="list-group mb-3 shadow-sm">
+                <div class="modal-body p-4 p-md-5">
                     
-                    <li class="list-group-item d-flex justify-content-between align-items-center lh-sm">
-                        <div class="d-flex align-items-center">
-                        <img src="img/productos/facial/SerumVitaminaC.png" alt="Sérum" class="img-fluid rounded me-3" style="width: 50px;">
-                        <div>
-                            <h6 class="my-0 small">Sérum Vitamina C</h6>
-                            <small class="text-muted" style="font-size: 0.75rem;">30ml</small>
-                        </div>
-                        </div>
-                        <span class="text-muted">35,95 €</span>
-                    </li>
-
-                    <li class="list-group-item d-flex justify-content-between align-items-center lh-sm">
-                        <div class="d-flex align-items-center">
-                        <img src="img/productos/corporal/CremaCorporal.png" alt="Crema" class="img-fluid rounded me-3" style="width: 50px;">
-                        <div>
-                            <h6 class="my-0 small">Crema Hidratante</h6>
-                            <small class="text-muted" style="font-size: 0.75rem;">50ml</small>
-                        </div>
-                        </div>
-                        <span class="text-muted">22,95 €</span>
-                    </li>
-
-                    <li class="list-group-item d-flex justify-content-between bg-light">
-                        <span class="fw-bold">Total (EUR)</span>
-                        <strong class="text-success">58,90 €</strong>
-                    </li>
-                    </ul>
-                </div>
-
-                <div class="col-md-6">
-                    
-                    <div class="mb-4">
-                    <label class="form-label small fw-bold">¿Tienes un cupón?</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Código promocional">
-                        <button class="btn btn-secondary" type="button">Aplicar</button>
-                    </div>
+                    <div class="text-center mb-5">
+                        <img src="img/logo/logo.png" alt="Velux Cosmetics" style="max-width: 140px;" class="mb-3">
+                        <h2 class="fw-bold text-black">Confirmación de Pago</h2>
+                        <p class="lead text-muted small">Revisa tu pedido y completa los datos.</p>
                     </div>
 
-                    <div class="mb-4">
-                    <p class="small fw-bold mb-2">Métodos de pago seguros:</p>
-                    <div class="d-flex gap-2">
-                        <img src="img/nav/pagos.png" alt="Tarjetas" style="height: 30px; object-fit: contain;">
+                    <div class="row g-5">
+                        
+                        <div class="col-md-5 col-lg-4 order-md-last">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-black">Tu carrito</span>
+                                <span class="badge bg-dark rounded-pill">2</span>
+                            </h4>
+                            <ul class="list-group mb-3 border-0 shadow-sm">
+                                <li class="list-group-item d-flex justify-content-between lh-sm border-0">
+                                    <div>
+                                        <h6 class="my-0 small">Sérum Vitamina C</h6>
+                                        <small class="text-muted" style="font-size: 0.8rem;">30ml</small>
+                                    </div>
+                                    <span class="text-muted">35,95 €</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between lh-sm border-0">
+                                    <div>
+                                        <h6 class="my-0 small">Crema Hidratante</h6>
+                                        <small class="text-muted" style="font-size: 0.8rem;">50ml</small>
+                                    </div>
+                                    <span class="text-muted">22,95 €</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between bg-light border-0 mt-1">
+                                    <span class="fw-bold text-black">Total (EUR)</span>
+                                    <strong class="text-black">58,90 €</strong>
+                                </li>
+                            </ul>
+
+                            <form class="card p-2 border-0 bg-light shadow-sm">
+                                <div class="input-group">
+                                    <input type="text" class="form-control border-0" placeholder="Código promocional">
+                                    <button type="submit" class="btn btn-dark">Aplicar</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-md-7 col-lg-8">
+                            <h4 class="mb-3 text-black">Dirección de Envío</h4>
+                            <form class="needs-validation" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-sm-6">
+                                        <label for="firstName" class="form-label small fw-bold">Nombre</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label for="lastName" class="form-label small fw-bold">Apellidos</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="email" class="form-label small fw-bold">Email</label>
+                                        <input type="email" class="form-control" id="email">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="address" class="form-label small fw-bold">Dirección</label>
+                                        <input type="text" class="form-control" id="address" required>
+                                    </div>
+
+                                    <div class="col-md-5">
+                                        <label for="country" class="form-label small fw-bold">País</label>
+                                        <select class="form-select" id="country" required>
+                                            <option value="">Elige...</option>
+                                            <option>España</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <label for="state" class="form-label small fw-bold">Provincia</label>
+                                        <select class="form-select" id="state" required>
+                                            <option value="">Elige...</option>
+                                            <option>Madrid</option>
+                                            <option>Barcelona</option>
+                                            <option>Valencia</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <label for="zip" class="form-label small fw-bold">C. Postal</label>
+                                        <input type="text" class="form-control" id="zip" required>
+                                    </div>
+                                </div>
+
+                                <hr class="my-4">
+
+                                <h4 class="mb-3 text-black">Método de Pago</h4>
+
+                                <div class="my-3">
+                                    <div class="form-check">
+                                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                                        <label class="form-check-label" for="credit">Tarjeta de crédito</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                                        <label class="form-check-label" for="paypal">PayPal</label>
+                                    </div>
+                                </div>
+
+                                <div class="row gy-3">
+                                    <div class="col-md-6">
+                                        <label for="cc-name" class="form-label small fw-bold">Nombre en la tarjeta</label>
+                                        <input type="text" class="form-control" id="cc-name" required>
+                                        <small class="text-muted">Nombre completo como aparece en la tarjeta</small>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="cc-number" class="form-label small fw-bold">Número de tarjeta</label>
+                                        <input type="text" class="form-control" id="cc-number" required>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <label for="cc-expiration" class="form-label small fw-bold">Caducidad</label>
+                                        <input type="text" class="form-control" id="cc-expiration" placeholder="MM/AA" required>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <label for="cc-cvv" class="form-label small fw-bold">CVV</label>
+                                        <input type="text" class="form-control" id="cc-cvv" required>
+                                    </div>
+                                </div>
+
+                                <hr class="my-4">
+
+                                <button class="w-100 btn btn-dark btn-lg rounded-pill" type="submit">
+                                    Pagar 58,90 €
+                                </button>
+                            </form>
                         </div>
                     </div>
-
-                    <button class="btn btn-primary w-100 btn-lg rounded-pill shadow-sm">
-                    Tramitar Pedido
-                    </button>
-                    
-                    <p class="text-center mt-3 text-muted" style="font-size: 0.7rem;">
-                    &copy; 2025 Velux Cosmetics. Pago 100% Seguro.
-                    </p>
-
                 </div>
-                </div>
-
-            </div>
             </div>
         </div>
     </div>
