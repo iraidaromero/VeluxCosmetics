@@ -82,57 +82,71 @@
                 <img src="img/banner/banner1.png" alt="Ambiente natural Velux">
             </div>
         </section>
-
-        <section class="seccion-promocion py-5">
-            <div class="container text-center">
+        <section class="py-5 w-100" style="background-color: #FEF7DF;">
+            <div class="container text-center py-3">
                 <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <h2 class="display-6 fw-bold">¿Es tu primera vez aquí?</h2>
-                        <p class="lead my-3">
-                            Tenemos un regalo especial para ti. Descubre tu descuento de bienvenida
-                            y empieza a cuidarte con Velux Cosmetics.
-                        </p>
-                        <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#modalPromoInfo">
-                            Ver Promoción
-                        </button>
-                    </div>
+                <div class="col-md-10 col-lg-8">
+                    
+                    <h3 class="fw-bold text-black mb-3 fs-2">
+                    ¿Es tu primera vez aquí?
+                    </h3>
+                    
+                    <p class="mb-4 text-dark" style="opacity: 0.8;">
+                    Tenemos un regalo especial para ti. Descubre tu descuento de bienvenida y empieza a cuidarte con Velux Cosmetics.
+                    </p>
+                    
+                    <button type="button" class="btn btn-dark btn-lg rounded-pill px-5 fs-6" data-bs-toggle="modal" data-bs-target="#modalPromoInfo">
+                    Ver Promoción
+                    </button>
+                    
+                </div>
                 </div>
             </div>
         </section>
 
         <section class="seccion-productos">
             <div class="rejilla-productos">
-                <a href="producto.html" class="tarjeta-producto">
+                
+                <div class="tarjeta-producto">
                     <img src="img/productos/facial/SerumVitaminaC.png" alt="Sérum vitamina C">
                     <h4>Sérum Vitamina C</h4>
                     <div class="valoracion">★★★★☆</div>
                     <p class="precio">35,95 €</p>
-                    <button class="boton">AÑADIR AL CARRITO</button>
-                </a>
+                    <button class="boton" type="button" data-bs-toggle="modal" data-bs-target="#modalPago">
+                        AÑADIR AL CARRITO
+                    </button>
+                </div>
 
-                <a href="producto.html" class="tarjeta-producto">
+                <div class="tarjeta-producto">
                     <img src="img/productos/corporal/CremaCorporal.png" alt="Crema hidratante corporal">
                     <h4>Crema Hidratante corporal</h4>
                     <div class="valoracion">★★★★☆</div>
                     <p class="precio">22,95 €</p>
-                    <button class="boton">AÑADIR AL CARRITO</button>
-                </a>
+                    <button class="boton" type="button" data-bs-toggle="modal" data-bs-target="#modalPago">
+                        AÑADIR AL CARRITO
+                    </button>
+                </div>
 
-                <a href="producto.html" class="tarjeta-producto">
+                <div class="tarjeta-producto">
                     <img src="img/productos/capilar/ProtectorTermico.png" alt="Protector térmico pelo">
                     <h4>Protector térmico pelo</h4>
                     <div class="valoracion">★★★★☆</div>
                     <p class="precio">19,95 €</p>
-                    <button class="boton">AÑADIR AL CARRITO</button>
-                </a>
+                    <button class="boton" type="button" data-bs-toggle="modal" data-bs-target="#modalPago">
+                        AÑADIR AL CARRITO
+                    </button>
+                </div>
 
-                <a href="producto.html" class="tarjeta-producto">
+                <div class="tarjeta-producto">
                     <img src="img/productos/capilar/ChampuAnticaida.png" alt="Champú anticaída">
                     <h4>Champú anticaída</h4>
                     <div class="valoracion">★★★★☆</div>
                     <p class="precio">19,95 €</p>
-                    <button class="boton">AÑADIR AL CARRITO</button>
-                </a>
+                    <button class="boton" type="button" data-bs-toggle="modal" data-bs-target="#modalPago">
+                        AÑADIR AL CARRITO
+                    </button>
+                </div>
+                
             </div>
         </section>
         <section class="container-fluid p-0 my-5">
@@ -439,6 +453,88 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="./js/menu.js"></script>
+
+    <div class="modal fade" id="modalPago" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg"> <div class="modal-content">
+            
+            <div class="modal-header border-0 pb-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body p-4 p-md-5">
+                
+                <div class="text-center mb-4">
+                <img src="img/logo/logo.png" alt="Velux Cosmetics" style="max-width: 120px;">
+                <h3 class="fw-bold mt-3">Confirmación de Pago</h3>
+                <p class="text-muted small">Revisa tu pedido y completa el pago de forma segura.</p>
+                </div>
+
+                <div class="row g-4">
+                <div class="col-md-6">
+                    <h5 class="mb-3">Tu Carrito</h5>
+                    <ul class="list-group mb-3 shadow-sm">
+                    
+                    <li class="list-group-item d-flex justify-content-between align-items-center lh-sm">
+                        <div class="d-flex align-items-center">
+                        <img src="img/productos/facial/SerumVitaminaC.png" alt="Sérum" class="img-fluid rounded me-3" style="width: 50px;">
+                        <div>
+                            <h6 class="my-0 small">Sérum Vitamina C</h6>
+                            <small class="text-muted" style="font-size: 0.75rem;">30ml</small>
+                        </div>
+                        </div>
+                        <span class="text-muted">35,95 €</span>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between align-items-center lh-sm">
+                        <div class="d-flex align-items-center">
+                        <img src="img/productos/corporal/CremaCorporal.png" alt="Crema" class="img-fluid rounded me-3" style="width: 50px;">
+                        <div>
+                            <h6 class="my-0 small">Crema Hidratante</h6>
+                            <small class="text-muted" style="font-size: 0.75rem;">50ml</small>
+                        </div>
+                        </div>
+                        <span class="text-muted">22,95 €</span>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between bg-light">
+                        <span class="fw-bold">Total (EUR)</span>
+                        <strong class="text-success">58,90 €</strong>
+                    </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6">
+                    
+                    <div class="mb-4">
+                    <label class="form-label small fw-bold">¿Tienes un cupón?</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Código promocional">
+                        <button class="btn btn-secondary" type="button">Aplicar</button>
+                    </div>
+                    </div>
+
+                    <div class="mb-4">
+                    <p class="small fw-bold mb-2">Métodos de pago seguros:</p>
+                    <div class="d-flex gap-2">
+                        <img src="img/nav/pagos.png" alt="Tarjetas" style="height: 30px; object-fit: contain;">
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary w-100 btn-lg rounded-pill shadow-sm">
+                    Tramitar Pedido
+                    </button>
+                    
+                    <p class="text-center mt-3 text-muted" style="font-size: 0.7rem;">
+                    &copy; 2025 Velux Cosmetics. Pago 100% Seguro.
+                    </p>
+
+                </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>

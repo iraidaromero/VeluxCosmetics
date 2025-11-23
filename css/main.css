@@ -13543,6 +13543,22 @@ footer {
   margin-bottom: 35px;
 }
 
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  color: black !important;
+  box-shadow: none !important;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .seccion-productos {
   padding: 40px 20px 100px;
 }
@@ -13700,99 +13716,6 @@ footer {
 }
 .enlace-secundario a:hover {
   text-decoration: underline;
-}
-
-#promoCarousel .carousel-control-prev-icon,
-#promoCarousel .carousel-control-next-icon {
-  filter: invert(1);
-}
-#promoCarousel .rejilla-productos {
-  padding: 0 4rem;
-}
-
-.seccion-promocion {
-  background-color: #FEF7DF;
-  padding: 1rem 0.8rem;
-  border-radius: 0.6rem;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
-}
-.seccion-promocion h2 {
-  color: #1E1E1E;
-  font-weight: 600;
-  font-size: 1.3rem;
-  margin-bottom: 0.6rem;
-}
-.seccion-promocion p {
-  font-size: 0.85rem;
-  color: #4a4a4a;
-  margin-bottom: 0.8rem;
-  font-weight: 400;
-}
-.seccion-promocion .btn-secondary {
-  background-color: #1E1E1E;
-  color: #fff;
-  padding: 0.45rem 1.2rem;
-  font-size: 0.8rem;
-  border-radius: 25px;
-  transition: all 0.25s;
-}
-.seccion-promocion .btn-secondary:hover {
-  background-color: rgb(60.6, 60.6, 60.6);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.promo-hero {
-  max-width: 700px;
-  margin: 8rem auto;
-  padding: 2rem 1.5rem;
-  background-color: #fef7df;
-  border-left: 5px solid #1E1E1E;
-  border-radius: 0.4rem;
-  text-align: left;
-  color: #1E1E1E;
-  font-family: "Roboto", sans-serif;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-}
-.promo-hero h1 {
-  font-size: 1.7rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  color: #1E1E1E;
-}
-.promo-hero p {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  margin-bottom: 0.5rem;
-  color: #333333;
-}
-.promo-hero p strong {
-  color: #1E1E1E;
-}
-.promo-hero hr {
-  width: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  margin: 0.6rem 0;
-}
-.promo-hero h2 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin: 0.4rem 0 1rem 0;
-  color: #1E1E1E;
-}
-.promo-hero button.btn-secondary {
-  font-size: 0.85rem;
-  padding: 0.45rem 1.3rem;
-  border-radius: 25px;
-  background-color: #1E1E1E;
-  color: #ffffff;
-  border: none;
-  transition: all 0.25s ease;
-}
-.promo-hero button.btn-secondary:hover {
-  background-color: #333333;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contenedor-pago {
