@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cremas Faciales | Velux Cosmetics</title>
+  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" type="image/x-icon" href="img/logo/favicon1.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-white">
+
+    <div class="chat-atencion">
+        <img src="img/nav/message.png" alt="Atención al cliente">
+    </div>
+    <div class="banner">
+        <p>ENVÍO GRATIS | ENTREGA 24/48H</p>
+    </div>
+    <header>
+        <div class="menu-buscador">
+            <img src="img/nav/nav.png" alt="Menú" class="icono-menu" id="abrir-menu">
+            <div class="buscador">
+                <img src="img/nav/search.png" alt="Buscar" class="icon">
+                <input type="text" placeholder="Buscar en Velux Cosmetics">
+            </div>
+        </div>
+        <audio id="sonidoMenu" src="media/audio.mp3"></audio>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo/logo.png" alt="Velux Cosmetics"></a>
+        </div>
+        <div class="iconos">
+            <a href="login.html"><img src="img/nav/user.png" alt="Usuario" class="icon"></a>
+            <img src="img/nav/heart.png" alt="Favoritos" class="icon">
+            <a href="pago.html"><img src="img/nav/cart.png" alt="Carrito" class="icon"></a>
+        </div>
+    </header>
+    <nav class="menu-lateral" id="menu-lateral">
+        <div class="cabecera-menu">
+            <img src="img/logo/logo.png" alt="Velux Cosmetics" class="logo-menu">
+            <button id="cerrar-menu">✕</button>
+        </div>
+        <ul class="lista-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="todosProductos.html">Todos los productos</a></li>
+            <li class="item-categorias">
+                <div class="titulo-categoria">
+                    <span><a href="categorias.html">Categorías</a></span>
+                    <button class="boton-submenu">+</button>
+                </div>
+                <ul class="submenu">
+                    <li><a href="categorias.html">Ver todo</a></li>
+                    <li><a href="categorias.html#facial">Facial</a></li>
+                    <li><a href="categorias.html#corporal">Corporal</a></li>
+                    <li><a href="categorias.html#capilar">Capilar</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
+        </ul>
+    </nav>
+    <div class="fondo-oscuro" id="fondo-oscuro"></div>
+
+  <main class="container py-5">
+    
+    <nav aria-label="breadcrumb" class="mb-4">
+      <ol class="breadcrumb small text-uppercase">
+        <li class="breadcrumb-item"><a href="index.html" class="text-muted text-decoration-none">Inicio</a></li>
+        <li class="breadcrumb-item active text-dark" aria-current="page">Cremas Faciales</li>
+      </ol>
+    </nav>
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="display-6 fw-bold text-black mb-0" style="font-family: 'Playfair Display', serif;">Cremas e Hidratantes</h1>
+        
+        <div class="d-none d-md-block">
+            <select class="form-select form-select-sm border-0 bg-light rounded-pill px-4">
+                <option selected>Ordenar por: Recomendados</option>
+                <option value="1">Precio: Menor a Mayor</option>
+                <option value="2">Precio: Mayor a Menor</option>
+                <option value="3">Novedades</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row g-5">
+        <div class="col-lg-3">
+            <div class="pe-lg-4">
+                <h5 class="fw-bold mb-3">Filtrar por</h5>
+                <div class="accordion accordion-flush" id="filtrosAccordion">
+    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed shadow-none fw-bold text-dark ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#filtroNecesidad">
+                                Necesidad
+                            </button>
+                        </h2>
+                        <div id="filtroNecesidad" class="accordion-collapse collapse show">
+                            <div class="accordion-body ps-0 pt-0">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="hidra">
+                                    <label class="form-check-label small text-muted" for="hidra">Hidratación</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="anti">
+                                    <label class="form-check-label small text-muted" for="anti">Antiedad</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="lumi">
+                                    <label class="form-check-label small text-muted" for="lumi">Luminosidad</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed shadow-none fw-bold text-dark ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#filtroPiel">
+                                Tipo de Piel
+                            </button>
+                        </h2>
+                        <div id="filtroPiel" class="accordion-collapse collapse">
+                            <div class="accordion-body ps-0 pt-0">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="seca">
+                                    <label class="form-check-label small text-muted" for="seca">Seca</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="mixta">
+                                    <label class="form-check-label small text-muted" for="mixta">Mixta/Grasa</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="sensible">
+                                    <label class="form-check-label small text-muted" for="sensible">Sensible</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-9">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-3">
+                
+                <div class="col">
+                    <div class="v-card h-100">
+                        <a href="producto2.html" class="text-decoration-none text-reset d-flex flex-column h-100">
+                            <span class="badge bg-dark v-card__badge">NUEVO</span>
+                            <div class="v-card__img-box">
+                                <img src="img/productos/corporal/CremaCorporal.png" alt="Crema" class="img-fluid">
+                            </div>
+                            <h5 class="v-card__title">Crema Hidratante 24H</h5>
+                            <div class="v-card__stars">★★★★☆</div>
+                            <p class="v-card__price">22,95 €</p>
+                            <div class="mt-auto w-100">
+                                <div class="v-card__btn">AÑADIR AL CARRITO</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="v-card h-100">
+                        <a href="producto3.html" class="text-decoration-none text-reset d-flex flex-column h-100">
+                            <div class="v-card__img-box">
+                                <img src="img/productos/facial/HidratantePieles.png" alt="Gel Crema" class="img-fluid">
+                            </div>
+                            <h5 class="v-card__title">Gel-Crema Matificante</h5>
+                            <div class="v-card__stars">★★★★★</div>
+                            <p class="v-card__price">25,95 €</p>
+                            <div class="mt-auto w-100">
+                                <div class="v-card__btn">AÑADIR AL CARRITO</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="v-card h-100">
+                        <a href="producto.html" class="text-decoration-none text-reset d-flex flex-column h-100">
+                            <div class="v-card__img-box">
+                                <img src="img/productos/facial/SerumVitaminaC.png" alt="Crema Noche" class="img-fluid">
+                            </div>
+                            <h5 class="v-card__title">Crema Noche Reparadora</h5>
+                            <div class="v-card__stars">★★★★☆</div>
+                            <p class="v-card__price">32,00 €</p>
+                            <div class="mt-auto w-100">
+                                <div class="v-card__btn">AÑADIR AL CARRITO</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="v-card h-100">
+                        <a href="producto2.html" class="text-decoration-none text-reset d-flex flex-column h-100">
+                            <span class="badge bg-danger v-card__badge">-20%</span>
+                            <div class="v-card__img-box">
+                                <img src="img/productos/corporal/CremaCorporal.png" alt="Contorno Ojos" class="img-fluid">
+                            </div>
+                            <h5 class="v-card__title">Contorno de Ojos</h5>
+                            <div class="v-card__stars">★★★★☆</div>
+                            <p class="v-card__price">
+                                <span class="text-muted text-decoration-line-through fw-normal fs-6 me-2">25€</span> 19,95 €
+                            </p>
+                            <div class="mt-auto w-100">
+                                <div class="v-card__btn">AÑADIR AL CARRITO</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="v-card h-100">
+                        <a href="producto.html" class="text-decoration-none text-reset d-flex flex-column h-100">
+                            <div class="v-card__img-box">
+                                <img src="img/productos/facial/Balsamo.png" alt="Bálsamo" class="img-fluid">
+                            </div>
+                            <h5 class="v-card__title">Bálsamo Calmante</h5>
+                            <div class="v-card__stars">★★★★★</div>
+                            <p class="v-card__price">15,50 €</p>
+                            <div class="mt-auto w-100">
+                                <div class="v-card__btn">AÑADIR AL CARRITO</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="v-card h-100">
+                        <a href="producto3.html" class="text-decoration-none text-reset d-flex flex-column h-100">
+                            <div class="v-card__img-box">
+                                <img src="img/productos/facial/SerumPestanas.png" alt="Crema Solar" class="img-fluid">
+                            </div>
+                            <h5 class="v-card__title">Crema Solar Facial 50+</h5>
+                            <div class="v-card__stars">★★★★☆</div>
+                            <p class="v-card__price">21,00 €</p>
+                            <div class="mt-auto w-100">
+                                <div class="v-card__btn">AÑADIR AL CARRITO</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="v-card h-100">
+                        <a href="producto2.html" class="text-decoration-none text-reset d-flex flex-column h-100">
+                            <div class="v-card__img-box">
+                                <img src="img/productos/facial/HidratantePieles.png" alt="Mascarilla" class="img-fluid">
+                            </div>
+                            <h5 class="v-card__title">Mascarilla Purificante</h5>
+                            <div class="v-card__stars">★★★★★</div>
+                            <p class="v-card__price">28,00 €</p>
+                            <div class="mt-auto w-100">
+                                <div class="v-card__btn">AÑADIR AL CARRITO</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="v-card h-100">
+                        <a href="producto.html" class="text-decoration-none text-reset d-flex flex-column h-100">
+                            <div class="v-card__img-box">
+                                <img src="img/productos/corporal/CremaCorporal.png" alt="Exfoliante" class="img-fluid">
+                            </div>
+                            <h5 class="v-card__title">Exfoliante Suave Facial</h5>
+                            <div class="v-card__stars">★★★★☆</div>
+                            <p class="v-card__price">18,50 €</p>
+                            <div class="mt-auto w-100">
+                                <div class="v-card__btn">AÑADIR AL CARRITO</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+  </main>
+
+  <footer>
+        <div class="footer-contenedor">
+            <div class="footer-logo">
+                <img src="img/logo/logo_negativo.png" alt="Velux Cosmetics">
+            </div>
+            <div class="footer-newsletter">
+                <h3>¡Suscríbete y consigue tu 20%!</h3>
+                <p>Vas a recibir novedades, descuentos y consejos de utilidad para cuidar tu piel y tu cabello con mucho amor</p>
+                <div class="input-email">
+                    <input type="email" placeholder="Correo electrónico">
+                    <button><img src="img/nav/arrow.png" alt="Enviar"></button>
+                </div>
+            </div>
+            <div class="footer-legal">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Devoluciones</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-contacto">
+                <h4>Contacto</h4>
+                <p><img src="img/nav/phone.png" class="icon"> 684-029-127</p>
+                <p><img src="img/nav/mail.png" class="icon"> info@veluxcosmetics.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-redes">
+                <img src="img/redes/instagram.png" alt="Instagram" class="icon">
+                <img src="img/redes/facebook.png" alt="Facebook" class="icon">
+                <img src="img/redes/tiktok.png" alt="TikTok" class="icon">
+                <img src="img/redes/whatsapp.png" alt="WhatsApp" class="icon">
+            </div>
+            <div class="footer-copy">
+                <p>© 2025 Velux Cosmetics. Todos los derechos reservados.</p>
+                <p class="licencia">Esta obra está bajo una <a href="#">Licencia Creative Commons</a>...</p>
+            </div>
+        </div>
+    </footer>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/menu.js"></script>
+</body>
+</html>

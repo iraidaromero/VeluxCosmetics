@@ -13885,4 +13885,80 @@ input[type=number]::-webkit-outer-spin-button {
   display: block;
 }
 
+.v-card {
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #fff;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.v-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+.v-card__img-box {
+  background-color: #FFFDF2;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.v-card__img-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+.v-card__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 0.25rem;
+}
+.v-card__stars {
+  color: #111;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  letter-spacing: 1px;
+}
+.v-card__price {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+.v-card__btn {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 15px;
+  width: 100%;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.2s;
+}
+.v-card__btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+.v-card__badge {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 10;
+  font-size: 0.7rem;
+  padding: 0.4em 0.7em;
+}
+
 /*# sourceMappingURL=main.css.map */
